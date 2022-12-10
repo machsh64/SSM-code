@@ -17,9 +17,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f11edad3-7511-4127-8545-baf724e51534" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis_helloworld/mybatis_helloworld.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis_helloworld/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis_helloworld/src/main/java/com/ren/mybatis/helloworld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis_helloworld/src/main/java/com/ren/mybatis/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis_helloworld/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis_helloworld/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis_helloworld/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis_helloworld/src/test/java/com/ren/mybatis/test/MybatisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/mybatis_helloworld.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_helloworld/mybatis_helloworld.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_helloworld/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/src/main/java/com/ren/mybatis/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/src/test/java/com/ren/mybatis/HelloWorldTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +35,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -65,6 +72,29 @@
     <property name="project.structure.side.proportion" value="0.289899" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
+  <component name="RunManager">
+    <configuration name="MybatisTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis_helloworld" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ren.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.MybatisTest" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MybatisTest.testInsert" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -76,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670672750108</updated>
       <workItem from="1670672751309" duration="2827000" />
-      <workItem from="1670676014784" duration="1685000" />
+      <workItem from="1670676014784" duration="7694000" />
     </task>
     <servers />
   </component>
@@ -109,6 +139,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1670678107414">
@@ -123,6 +155,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="676" y="268" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670676198859" />
+    <state width="1876" height="265" key="GridCell.Tab.0.bottom" timestamp="1670683963554">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="265" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670683963554" />
+    <state width="1876" height="265" key="GridCell.Tab.0.center" timestamp="1670683963554">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="265" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670683963554" />
+    <state width="1876" height="265" key="GridCell.Tab.0.left" timestamp="1670683963554">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="265" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670683963554" />
+    <state width="1876" height="265" key="GridCell.Tab.0.right" timestamp="1670683963554">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="265" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670683963554" />
+    <state width="1876" height="364" key="GridCell.Tab.1.right" timestamp="1670683630213">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="364" key="GridCell.Tab.1.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670683630213" />
     <state x="405" y="159" key="SettingsEditor" timestamp="1670678066961">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
