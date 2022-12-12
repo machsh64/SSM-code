@@ -4,9 +4,72 @@
         "https://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-    <!-- 配置连接数据库的环境 -->
+
+    <!--
+    书写顺序
+    properties?,settings?,typeAliases?,typeHandlers?,objectFactory?,
+    objectWrapperFactory?,reflectorFactory?,plugins?,environments?,
+    databaseIdProvider?,mappers?
+    -->
+
+    <!-- 引入properties文件，此后就可以在当前文件中使用${key}的方式访问value -->
+    <properties resource="druid.properties"/>
+
+    <!--
+      typeAliases：设置类型别名，即为某个具体的类型设置一个别名
+       在MyBatis的范围中，就可以使用别名表示一个具体的类型
+    -->
+    <typeAliases>
+        <!--
+          type：设置需要起别名的类型
+          alias：设置某个类型的别名
+        -->
+<!--    <typeAlias type="com.ren.mybatis.pojo.User" alias="pjUser"></typeAlias>  -->
+        <!-- 在未设置alias的情况下，默认的别名就是他自己的类名 -->
+<!--    <typeAlias type="com.ren.mybatis.pojo.User"></typeAlias>  -->
+        <!-- 通过包设置类型别名，指定包下所有的类型将全部拥有默认的别名-->
+        <package name="com.ren.mybatis.pojo"/>
+    </typeAliases>
+
+    <!--
+       environments：配置连接数据库的环境
+       属性：
+       default：设置默认使用的环境的id
+     -->
     <environments default="development">
+        <!--
+           environment：设置一个具体的连接数据库的环境
+           属性：
+           id：设置环境的唯一标识，不能重复
+        -->
         <environment id="development">
+            <!--
+              transactionManager：设置事务管理器
+              属性：
+              type：设置事务管理的方式
+              type="JDBC/MANAGED"
+              JDBC：表示使用JDBC中原声的事务管理方式
+              MANAGED：被管理，例如Spring
+            -->
+            <transactionManager type="JDBC"/>
+            <!--
+              dataSource：设置数据源
+              属性：
+              type：设置数据源的类型
+              type="POOLED/UNPOOLED/JNDI"
+              POLLED：表示使用数据库连接池
+              UNPOOLED：表示不使用数据库连接池
+              JNDI：表示使用上下文中的数据源
+            -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${druid.driver}"/>
+                <property name="url" value="${druid.url}"/>
+                <property name="username" value="${druid.username}"/>
+                <property name="password" value="${druid.password}"/>
+            </dataSource>
+        </environment>
+
+        <environment id="test">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
@@ -20,6 +83,13 @@
     <!-- 引入mybatis的映射文件 -->
     <mappers>
 <!--        <mapper resource="org/mybatis/example/BlogMapper.xml"/>    -->
-        <mapper resource="mappers/UserMapper.xml"/>
+<!--        <mapper resource="mappers/UserMapper.xml"/>  -->
+        <!--
+          以包的方式引入映射文件，但是必须满足两个条件：
+          1，mapper接口和映射文件所在的包必须一致
+          2，mapper接口的名字和映射文件的名字必须一致
+        -->
+        <package name="com.ren.mybatis.mapper"/>
     </mappers>
 </configuration>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace对应mapper接口的全类型 -->
+<mapper namespace="com.ren.mybatis.mapper.UserMapper">
+    <!-- sql语句填写区 例：<select id="mapper接口中的方法" resultType="数据类型全类名/别名">sql语句</select>-->
+
+    <!-- User getUserByUserName(String username); -->
+    <select id="getUserByUserName" resultType="User">
+        SELECT *
+        FROM t_user
+        WHERE username = #{username}  <!-- 此处可以通过任意内容获取参数值，但为了见名知意，最好填为参数名 -->
+    </select>
+
+    <!-- User checkLogin(String username,String password); -->
+    <select id="checkLogin" resultType="User">
+       <!-- SELECT *
+        FROM t_user
+        WHERE username = #{arg0}
+          AND password = #{arg1}
+          -->
+        SELECT *
+        FROM t_user
+        WHERE username = #{param1}
+        AND password = #{param2}
+    </select>
+</mapper>

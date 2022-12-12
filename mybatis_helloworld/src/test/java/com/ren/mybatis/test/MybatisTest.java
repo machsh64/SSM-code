@@ -1,15 +1,17 @@
 package com.ren.mybatis.test;
 
 import com.ren.mybatis.mapper.UserMapper;
+import com.ren.mybatis.pojo.User;
+import com.ren.mybatis.utils.SqlSessionUtil;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 /**
  * @program: SSM
@@ -18,10 +20,6 @@ import java.io.InputStream;
  * @description:
  **/
 public class MybatisTest {
-    @Before
-    public void before(){
-
-    }
 
     @Test
     public void testInsert() {
@@ -45,5 +43,33 @@ public class MybatisTest {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    
+    @Test
+    public void testUtils() {
+        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        //int result = mapper.updateUser();
+        int result = mapper.deleteUser();
+        sqlSession.close();
+        System.out.println("结果：" + result);
+    }
+
+    @Test
+    public void testSelect() {
+        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        User user = mapper.getUserById();
+        System.out.println(user);
+        sqlSession.close();
+    }
+
+    @Test
+    public void testSelectList() {
+        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        List<User> userList = mapper.getUserList();
+        userList.forEach(System.out::println);
+        sqlSession.close();
     }
 }
