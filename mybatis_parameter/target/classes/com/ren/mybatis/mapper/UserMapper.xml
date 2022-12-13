@@ -6,6 +6,7 @@
 <mapper namespace="com.ren.mybatis.mapper.UserMapper">
     <!-- sql语句填写区 例：<select id="mapper接口中的方法" resultType="数据类型全类名/别名">sql语句</select>-->
 
+    <!-- 单个字面量类型的参数 -->
     <!-- User getUserByUserName(String username); -->
     <select id="getUserByUserName" resultType="User">
         SELECT *
@@ -13,16 +14,39 @@
         WHERE username = #{username}  <!-- 此处可以通过任意内容获取参数值，但为了见名知意，最好填为参数名 -->
     </select>
 
+    <!-- 多个字面量类型的参数 -->
     <!-- User checkLogin(String username,String password); -->
     <select id="checkLogin" resultType="User">
-       <!-- SELECT *
-        FROM t_user
-        WHERE username = #{arg0}
-          AND password = #{arg1}
-          -->
+        <!-- SELECT *
+         FROM t_user
+         WHERE username = #{arg0}
+           AND password = #{arg1}
+           -->
         SELECT *
         FROM t_user
         WHERE username = #{param1}
-        AND password = #{param2}
+        AND password = #{param2}        <!-- 通过访问map集合的键，来获取对应的值 -->
+    </select>
+
+    <!-- User checkLoginByMap(Map<String,Object> map); -->
+    <select id="checkLoginByMap" resultType="User">
+        SELECT *
+        FROM t_user
+        WHERE username = #{username}
+          AND password = #{password}
+    </select>
+
+    <!-- int insertUser(User user); -->
+    <insert id="insertUser">
+        INSERT INTO t_user(username, password, age, gender, email)
+        VALUES (#{username},#{password},#{age},#{gender},#{email})
+    </insert>
+
+    <!-- User checkLoginByParam(@Param("username") String username,@Param("password") String password); -->
+    <select id="checkLoginByParam" resultType="User">
+        SELECT *
+        FROM t_user
+        WHERE username = #{username}
+          AND password = #{password}
     </select>
 </mapper>

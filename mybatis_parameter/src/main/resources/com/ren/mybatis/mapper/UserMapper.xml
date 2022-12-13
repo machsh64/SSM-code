@@ -17,14 +17,36 @@
     <!-- 多个字面量类型的参数 -->
     <!-- User checkLogin(String username,String password); -->
     <select id="checkLogin" resultType="User">
-       <!-- SELECT *
-        FROM t_user
-        WHERE username = #{arg0}
-          AND password = #{arg1}
-          -->
+        <!-- SELECT *
+         FROM t_user
+         WHERE username = #{arg0}
+           AND password = #{arg1}
+           -->
         SELECT *
         FROM t_user
         WHERE username = #{param1}
         AND password = #{param2}        <!-- 通过访问map集合的键，来获取对应的值 -->
+    </select>
+
+    <!-- User checkLoginByMap(Map<String,Object> map); -->
+    <select id="checkLoginByMap" resultType="User">
+        SELECT *
+        FROM t_user
+        WHERE username = #{username}
+          AND password = #{password}
+    </select>
+
+    <!-- int insertUser(User user); -->
+    <insert id="insertUser">
+        INSERT INTO t_user(username, password, age, gender, email)
+        VALUES (#{username},#{password},#{age},#{gender},#{email})
+    </insert>
+
+    <!-- User checkLoginByParam(@Param("username") String username,@Param("password") String password); -->
+    <select id="checkLoginByParam" resultType="User">
+        SELECT *
+        FROM t_user
+        WHERE username = #{username}
+          AND password = #{password}
     </select>
 </mapper>

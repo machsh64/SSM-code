@@ -17,29 +17,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f11edad3-7511-4127-8545-baf724e51534" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis_helloworld/src/main/java/com/ren/mybatis/utils/SqlSessionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis_helloworld/src/main/resources/com/ren/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis_helloworld/src/main/resources/druid.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis_parameter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis_parameter/src/main/java/com/ren/mybatis/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis_parameter/src/main/java/com/ren/mybatis/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis_parameter/src/main/java/com/ren/mybatis/utils/SqlSessionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis_parameter/src/main/java/com/ren/mybatis/utils/StringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis_parameter/src/main/resources/com/ren/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis_parameter/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis_parameter/src/main/resources/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis_parameter/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis_parameter/src/test/java/com/ren/mybatis/test/ParameterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/src/main/java/com/ren/mybatis/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_helloworld/src/main/java/com/ren/mybatis/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/src/main/java/com/ren/mybatis/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_helloworld/src/main/java/com/ren/mybatis/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/src/main/resources/mappers/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_helloworld/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/src/test/java/com/ren/mybatis/test/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_helloworld/src/test/java/com/ren/mybatis/test/MybatisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/target/classes/com/ren/mybatis/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_helloworld/target/classes/com/ren/mybatis/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/target/classes/com/ren/mybatis/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_helloworld/target/classes/com/ren/mybatis/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/target/classes/mappers/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_helloworld/target/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/target/test-classes/com/ren/mybatis/test/MybatisTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_helloworld/target/test-classes/com/ren/mybatis/test/MybatisTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis_parameter/src/main/java/com/ren/mybatis/mapper/SelectMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis_parameter/src/main/java/com/ren/mybatis/mapper/SpecialSqlMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis_parameter/src/main/resources/com/ren/mybatis/mapper/SelectMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis_parameter/src/main/resources/com/ren/mybatis/mapper/SpecialSqlMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis_parameter/src/test/java/com/ren/mybatis/test/SelectMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis_parameter/src/test/java/com/ren/mybatis/test/SpecialSqlMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/main/java/com/ren/mybatis/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_parameter/src/main/java/com/ren/mybatis/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/main/java/com/ren/mybatis/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_parameter/src/main/java/com/ren/mybatis/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/main/resources/com/ren/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_parameter/src/main/resources/com/ren/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/test/java/com/ren/mybatis/test/ParameterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_parameter/src/test/java/com/ren/mybatis/test/ParameterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/classes/com/ren/mybatis/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_parameter/target/classes/com/ren/mybatis/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/classes/com/ren/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_parameter/target/classes/com/ren/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/classes/com/ren/mybatis/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_parameter/target/classes/com/ren/mybatis/pojo/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/test-classes/com/ren/mybatis/test/ParameterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_parameter/target/test-classes/com/ren/mybatis/test/ParameterTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +79,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.19340974" />
     <property name="project.structure.side.proportion" value="0.289899" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -102,56 +93,8 @@
       <recent name="D:\RenComp\SSM\mybatis_helloworld\src\main\resources\com\ren\mybatis\mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParameterTest.testCheckLogin">
-    <configuration name="MybatisTest.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis_helloworld" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ren.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.MybatisTest" />
-      <option name="METHOD_NAME" value="testSelect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MybatisTest.testSelectList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis_helloworld" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ren.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.MybatisTest" />
-      <option name="METHOD_NAME" value="testSelectList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MybatisTest.testUtils" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis_helloworld" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ren.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.MybatisTest" />
-      <option name="METHOD_NAME" value="testUtils" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParameterTest.testCheckLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SpecialSqlMapperTest.testGetUserList">
+    <configuration name="SelectMapperTest.testGetAllUserToMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis_parameter" />
       <extension name="coverage">
         <pattern>
@@ -160,14 +103,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.ParameterTest" />
-      <option name="METHOD_NAME" value="testCheckLogin" />
+      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.SelectMapperTest" />
+      <option name="METHOD_NAME" value="testGetAllUserToMap" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParameterTest.testGetUserByUserName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SelectMapperTest.testGetUserByIdToMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis_parameter" />
       <extension name="coverage">
         <pattern>
@@ -176,8 +119,56 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.ParameterTest" />
-      <option name="METHOD_NAME" value="testGetUserByUserName" />
+      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.SelectMapperTest" />
+      <option name="METHOD_NAME" value="testGetUserByIdToMap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpecialSqlMapperTest.testDeleteMoreUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis_parameter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ren.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.SpecialSqlMapperTest" />
+      <option name="METHOD_NAME" value="testDeleteMoreUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpecialSqlMapperTest.testGetUserByLike" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis_parameter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ren.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.SpecialSqlMapperTest" />
+      <option name="METHOD_NAME" value="testGetUserByLike" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpecialSqlMapperTest.testGetUserList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis_parameter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ren.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.SpecialSqlMapperTest" />
+      <option name="METHOD_NAME" value="testGetUserList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -185,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ParameterTest.testCheckLogin" />
-        <item itemvalue="JUnit.ParameterTest.testGetUserByUserName" />
-        <item itemvalue="JUnit.MybatisTest.testSelectList" />
-        <item itemvalue="JUnit.MybatisTest.testSelect" />
-        <item itemvalue="JUnit.MybatisTest.testUtils" />
+        <item itemvalue="JUnit.SpecialSqlMapperTest.testGetUserList" />
+        <item itemvalue="JUnit.SpecialSqlMapperTest.testDeleteMoreUser" />
+        <item itemvalue="JUnit.SpecialSqlMapperTest.testGetUserByLike" />
+        <item itemvalue="JUnit.SelectMapperTest.testGetAllUserToMap" />
+        <item itemvalue="JUnit.SelectMapperTest.testGetUserByIdToMap" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +195,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670672750108</updated>
       <workItem from="1670672751309" duration="2827000" />
-      <workItem from="1670676014784" duration="24129000" />
+      <workItem from="1670676014784" duration="39183000" />
     </task>
     <servers />
   </component>
@@ -241,6 +232,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="586" y="218" key="#Inspections" timestamp="1670921825674">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="586" y="218" key="#Inspections/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670921825674" />
     <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1670832373202">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -262,30 +257,30 @@
     </state>
     <state x="676" y="268" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670832227190" />
     <state x="2435" y="204" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1670825858278" />
-    <state width="1876" height="240" key="GridCell.Tab.0.bottom" timestamp="1670843134482">
+    <state width="1876" height="240" key="GridCell.Tab.0.bottom" timestamp="1670935502555">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="240" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670843134482" />
-    <state width="1876" height="240" key="GridCell.Tab.0.center" timestamp="1670843134482">
+    <state width="1876" height="240" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670935502555" />
+    <state width="1876" height="240" key="GridCell.Tab.0.center" timestamp="1670935502555">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="240" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670843134482" />
-    <state width="1876" height="240" key="GridCell.Tab.0.left" timestamp="1670843134482">
+    <state width="1876" height="240" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670935502555" />
+    <state width="1876" height="240" key="GridCell.Tab.0.left" timestamp="1670935502555">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="240" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670843134482" />
-    <state width="1876" height="240" key="GridCell.Tab.0.right" timestamp="1670843134482">
+    <state width="1876" height="240" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670935502555" />
+    <state width="1876" height="240" key="GridCell.Tab.0.right" timestamp="1670935502555">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="240" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670843134482" />
+    <state width="1876" height="240" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670935502555" />
     <state width="1876" height="364" key="GridCell.Tab.1.right" timestamp="1670683630213">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1876" height="364" key="GridCell.Tab.1.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670683630213" />
-    <state x="431" y="182" width="1192" height="766" key="SettingsEditor" timestamp="1670841957642">
+    <state x="282" y="208" width="1192" height="766" key="SettingsEditor" timestamp="1670934682367">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="431" y="182" width="1192" height="766" key="SettingsEditor/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670841957642" />
+    <state x="282" y="208" width="1192" height="766" key="SettingsEditor/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670934682367" />
     <state x="769" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1670675872225">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

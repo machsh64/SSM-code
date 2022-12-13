@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace对应mapper接口的全类型 -->
+<mapper namespace="com.ren.mybatis.mapper.SelectMapper">
+    <!-- sql语句填写区 例：<select id="mapper接口中的方法" resultType="数据类型全类名/别名">sql语句</select>-->
+
+    <!-- User getUserById(@Param("id") int id); -->
+    <select id="getUserById" resultType="User">
+        SELECT *
+        FROM t_user
+        WHERE id = #{id}
+    </select>
+
+    <!-- List<User> getAllUser(); -->
+    <select id="getAllUser" resultType="User">
+        SELECT *
+        FROM t_user
+    </select>
+
+    <!--
+      Mybatis中为java中常用的类型设置了类型别名
+      Integer：Integer，int
+      int：_int，_integer
+      Map：map
+      String：string
+     -->
+    <!-- Integer getCount(); -->
+    <select id="getCount" resultType="Integer">
+        SELECT COUNT(id)
+        FROM t_user;
+    </select>
+
+    <!-- Map<String,Object> getUserByIdToMap(@Param("id") Integer id); -->
+    <select id="getUserByIdToMap" resultType="Map">
+        SELECT *
+        FROM t_user
+        WHERE id = #{id}
+    </select>
+
+    <!-- @MapKey("id") Map<Object,Object> getAllUserToMap(); -->
+    <select id="getAllUserToMap" resultType="Map">
+        SELECT *
+        FROM t_user
+    </select>
+</mapper>
