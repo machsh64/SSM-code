@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/01mybatis_helloworld/01mybatis_helloworld.iml" filepath="$PROJECT_DIR$/01mybatis_helloworld/01mybatis_helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02mybatis_parameter/02mybatis_parameter.iml" filepath="$PROJECT_DIR$/02mybatis_parameter/02mybatis_parameter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03mybaits-resultMap/03mybaits-resultMap.iml" filepath="$PROJECT_DIR$/03mybaits-resultMap/03mybaits-resultMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04mybatis_dynamicSQL/04mybatis_dynamicSQL.iml" filepath="$PROJECT_DIR$/04mybatis_dynamicSQL/04mybatis_dynamicSQL.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SSM.iml" filepath="$PROJECT_DIR$/.idea/SSM.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mybatis_helloworld/mybatis_helloworld.iml" filepath="$PROJECT_DIR$/mybatis_helloworld/mybatis_helloworld.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mybatis_parameter/mybatis_parameter.iml" filepath="$PROJECT_DIR$/mybatis_parameter/mybatis_parameter.iml" />
     </modules>
   </component>
 </project>
