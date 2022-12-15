@@ -17,72 +17,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f11edad3-7511-4127-8545-baf724e51534" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/02mybatis_parameter/target/test-classes/com/ren/mybatis/test/SpecialSqlMapperTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03mybaits-resultMap/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03mybaits-resultMap/src/main/java/com/ren/mybatis/mapper/DeptMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03mybaits-resultMap/src/main/java/com/ren/mybatis/mapper/EmpMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03mybaits-resultMap/src/main/java/com/ren/mybatis/pojo/Dept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03mybaits-resultMap/src/main/java/com/ren/mybatis/pojo/Emp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03mybaits-resultMap/src/main/java/com/ren/mybatis/utils/SqlSessionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03mybaits-resultMap/src/main/resources/com/ren/mybatis/mapper/DeptMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03mybaits-resultMap/src/main/resources/com/ren/mybatis/mapper/EmpMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03mybaits-resultMap/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03mybaits-resultMap/src/main/resources/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03mybaits-resultMap/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03mybaits-resultMap/src/test/java/com/ren/mybatis/test/ResultMapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04mybatis_dynamicSQL/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/mybatis_helloworld.iml" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/01mybatis_helloworld.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/src/main/java/com/ren/mybatis/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/src/main/java/com/ren/mybatis/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/src/main/java/com/ren/mybatis/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/src/main/java/com/ren/mybatis/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/src/main/java/com/ren/mybatis/utils/SqlSessionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/src/main/java/com/ren/mybatis/utils/SqlSessionUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/src/main/resources/com/ren/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/src/main/resources/com/ren/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/src/main/resources/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/src/main/resources/druid.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/src/main/resources/log4j.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/src/test/java/com/ren/mybatis/test/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/src/test/java/com/ren/mybatis/test/MybatisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/target/classes/com/ren/mybatis/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/target/classes/com/ren/mybatis/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/target/classes/com/ren/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/target/classes/com/ren/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/target/classes/com/ren/mybatis/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/target/classes/com/ren/mybatis/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/target/classes/com/ren/mybatis/utils/SqlSessionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/target/classes/com/ren/mybatis/utils/SqlSessionUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/target/classes/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/target/classes/druid.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/target/classes/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/target/classes/log4j.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/target/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_helloworld/target/test-classes/com/ren/mybatis/test/MybatisTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/target/test-classes/com/ren/mybatis/test/MybatisTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/mybatis_parameter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/02mybatis_parameter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/main/java/com/ren/mybatis/mapper/SelectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/src/main/java/com/ren/mybatis/mapper/SelectMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/main/java/com/ren/mybatis/mapper/SpecialSqlMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/src/main/java/com/ren/mybatis/mapper/SpecialSqlMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/main/java/com/ren/mybatis/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/src/main/java/com/ren/mybatis/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/main/java/com/ren/mybatis/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/src/main/java/com/ren/mybatis/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/main/java/com/ren/mybatis/utils/SqlSessionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/src/main/java/com/ren/mybatis/utils/SqlSessionUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/main/java/com/ren/mybatis/utils/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/src/main/java/com/ren/mybatis/utils/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/main/resources/com/ren/mybatis/mapper/SelectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/src/main/resources/com/ren/mybatis/mapper/SelectMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/main/resources/com/ren/mybatis/mapper/SpecialSqlMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/target/classes/com/ren/mybatis/mapper/SpecialSqlMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/main/resources/com/ren/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/src/main/resources/com/ren/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/src/main/resources/log4j.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/test/java/com/ren/mybatis/test/ParameterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/src/test/java/com/ren/mybatis/test/ParameterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/test/java/com/ren/mybatis/test/SelectMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/src/test/java/com/ren/mybatis/test/SelectMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/src/test/java/com/ren/mybatis/test/SpecialSqlMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/src/test/java/com/ren/mybatis/test/SpecialSqlMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/classes/META-INF/mybatis_parameter.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/target/classes/META-INF/mybatis_parameter.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/classes/com/ren/mybatis/mapper/SelectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/target/classes/com/ren/mybatis/mapper/SelectMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/classes/com/ren/mybatis/mapper/SelectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/target/classes/com/ren/mybatis/mapper/SelectMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/classes/com/ren/mybatis/mapper/SpecialSqlMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/target/classes/com/ren/mybatis/mapper/SpecialSqlMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/classes/com/ren/mybatis/mapper/SpecialSqlMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/src/main/resources/com/ren/mybatis/mapper/SpecialSqlMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/classes/com/ren/mybatis/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/target/classes/com/ren/mybatis/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/classes/com/ren/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/target/classes/com/ren/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/classes/com/ren/mybatis/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/target/classes/com/ren/mybatis/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/classes/com/ren/mybatis/utils/SqlSessionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/target/classes/com/ren/mybatis/utils/SqlSessionUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/classes/com/ren/mybatis/utils/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/target/classes/com/ren/mybatis/utils/StringUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/target/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/classes/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/target/classes/log4j.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/target/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/test-classes/META-INF/mybatis_parameter.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/test-classes/com/ren/mybatis/test/ParameterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/target/test-classes/com/ren/mybatis/test/ParameterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/test-classes/com/ren/mybatis/test/SelectMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/target/test-classes/com/ren/mybatis/test/SelectMapperTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_parameter/target/test-classes/com/ren/mybatis/test/SpecialSqlMapperTest.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/04mybatis_dynamicSQL/src/main/java/com/ren/mybatis/mapper/DynamicSQLMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04mybatis_dynamicSQL/src/main/java/com/ren/mybatis/pojo/Emp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04mybatis_dynamicSQL/src/main/resources/com/ren/mybatis/mapper/DynamicSQLMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04mybatis_dynamicSQL/src/test/java/com/ren/mybatis/test/DynamicMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01mybatis_helloworld/01mybatis_helloworld.iml" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/01mybatis_helloworld.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02mybatis_parameter/02mybatis_parameter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/02mybatis_parameter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03mybaits-resultMap/03mybaits-resultMap.iml" beforeDir="false" afterPath="$PROJECT_DIR$/03mybaits-resultMap/03mybaits-resultMap.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04mybatis_dynamicSQL/04mybatis_dynamicSQL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/04mybatis_dynamicSQL/04mybatis_dynamicSQL.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,11 +34,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="jdbc" />
         <option value="mybatis-config" />
         <option value="log4j" />
-        <option value="Class" />
-        <option value="mybatis-mapper" />
         <option value="Interface" />
+        <option value="mybatis-mapper" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -120,10 +63,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/00test/src/main/webapp" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.19340974" />
     <property name="project.structure.side.proportion" value="0.289899" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -138,9 +81,9 @@
       <recent name="D:\RenComp\SSM\mybatis_parameter\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ResultMapTest.testGetDeptAndEmpByDeptIdByStep">
-    <configuration name="ResultMapTest.testGetDeptAndEmpByDeptId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="03mybaits-resultMap" />
+  <component name="RunManager" selected="JUnit.DynamicMapperTest.testDeleteMoreEmp">
+    <configuration name="DynamicMapperTest.testDeleteMoreEmp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="04mybatis_dynamicSQL" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ren.mybatis.test.*" />
@@ -148,15 +91,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.ResultMapTest" />
-      <option name="METHOD_NAME" value="testGetDeptAndEmpByDeptId" />
+      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.DynamicMapperTest" />
+      <option name="METHOD_NAME" value="testDeleteMoreEmp" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultMapTest.testGetDeptAndEmpByDeptIdByCollection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="03mybaits-resultMap" />
+    <configuration name="DynamicMapperTest.testGetEmpByChoose" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="04mybatis_dynamicSQL" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ren.mybatis.test.*" />
@@ -164,8 +107,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.ResultMapTest" />
-      <option name="METHOD_NAME" value="testGetDeptAndEmpByDeptIdByCollection" />
+      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.DynamicMapperTest" />
+      <option name="METHOD_NAME" value="testGetEmpByChoose" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicMapperTest.testGetEmpByCondition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="04mybatis_dynamicSQL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ren.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.DynamicMapperTest" />
+      <option name="METHOD_NAME" value="testGetEmpByCondition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicMapperTest.testInsertMoreEmp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="04mybatis_dynamicSQL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ren.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.DynamicMapperTest" />
+      <option name="METHOD_NAME" value="testInsertMoreEmp" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,45 +162,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultMapTest.testGetEmpAndDeptByEmpId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="03mybaits-resultMap" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ren.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.ResultMapTest" />
-      <option name="METHOD_NAME" value="testGetEmpAndDeptByEmpId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResultMapTest.testGetEmpAndDeptByStep" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="03mybaits-resultMap" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ren.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.ResultMapTest" />
-      <option name="METHOD_NAME" value="testGetEmpAndDeptByStep" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DynamicMapperTest.testDeleteMoreEmp" />
+        <item itemvalue="JUnit.DynamicMapperTest.testInsertMoreEmp" />
+        <item itemvalue="JUnit.DynamicMapperTest.testGetEmpByChoose" />
+        <item itemvalue="JUnit.DynamicMapperTest.testGetEmpByCondition" />
         <item itemvalue="JUnit.ResultMapTest.testGetDeptAndEmpByDeptIdByStep" />
-        <item itemvalue="JUnit.ResultMapTest.testGetDeptAndEmpByDeptIdByCollection" />
-        <item itemvalue="JUnit.ResultMapTest.testGetDeptAndEmpByDeptId" />
-        <item itemvalue="JUnit.ResultMapTest.testGetEmpAndDeptByStep" />
-        <item itemvalue="JUnit.ResultMapTest.testGetEmpAndDeptByEmpId" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +184,7 @@
       <updated>1670672750108</updated>
       <workItem from="1670672751309" duration="2827000" />
       <workItem from="1670676014784" duration="44548000" />
-      <workItem from="1671011104815" duration="15132000" />
+      <workItem from="1671011104815" duration="24961000" />
     </task>
     <servers />
   </component>
@@ -298,10 +241,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="709" y="377" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670840206064" />
-    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1671092888675">
+    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1671099263904">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671092888675" />
+    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671099263904" />
     <state x="841" y="314" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1671096571991">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -319,22 +262,22 @@
     </state>
     <state x="676" y="268" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671096535493" />
     <state x="2435" y="204" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1670825858278" />
-    <state width="1876" height="240" key="GridCell.Tab.0.bottom" timestamp="1671096896585">
+    <state width="1876" height="240" key="GridCell.Tab.0.bottom" timestamp="1671107927312">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="240" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671096896585" />
-    <state width="1876" height="240" key="GridCell.Tab.0.center" timestamp="1671096896585">
+    <state width="1876" height="240" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671107927312" />
+    <state width="1876" height="240" key="GridCell.Tab.0.center" timestamp="1671107927312">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="240" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671096896585" />
-    <state width="1876" height="240" key="GridCell.Tab.0.left" timestamp="1671096896585">
+    <state width="1876" height="240" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671107927312" />
+    <state width="1876" height="240" key="GridCell.Tab.0.left" timestamp="1671107927311">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="240" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671096896585" />
-    <state width="1876" height="240" key="GridCell.Tab.0.right" timestamp="1671096896585">
+    <state width="1876" height="240" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671107927311" />
+    <state width="1876" height="240" key="GridCell.Tab.0.right" timestamp="1671107927312">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="240" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671096896585" />
+    <state width="1876" height="240" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671107927312" />
     <state width="1876" height="364" key="GridCell.Tab.1.right" timestamp="1670683630213">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -343,10 +286,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="538" y="296" key="NewModule_or_Project.wizard/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671008512405" />
-    <state x="451" y="132" width="1192" height="766" key="SettingsEditor" timestamp="1671098764750">
+    <state x="451" y="132" width="1192" height="766" key="SettingsEditor" timestamp="1671100365411">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="451" y="132" width="1192" height="766" key="SettingsEditor/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671098764750" />
+    <state x="451" y="132" width="1192" height="766" key="SettingsEditor/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671100365411" />
     <state x="769" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1670675872225">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -355,10 +298,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="477" y="228" key="new project wizard/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671098664974" />
-    <state x="616" y="250" key="run.anything.popup" timestamp="1670841657433">
+    <state x="616" y="250" key="run.anything.popup" timestamp="1671101241579">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="616" y="250" key="run.anything.popup/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670841657433" />
+    <state x="616" y="250" key="run.anything.popup/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671101241579" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace对应mapper接口的全类型 -->
+<mapper namespace="com.ren.mybatis.mapper.DynamicSQLMapper">
+    <!-- sql语句填写区 例：<select id="mapper接口中的方法" resultType="数据类型全类名/别名">sql语句</select>-->
+
+    <!--
+      动态SQL：
+      1，if ： 通过test属性中的表达式判断标签中的内容是否有效（是否会拼接到sql中）
+      2，where ： a，若where标签中有条件成立，会自动生成where关键字
+                 b，会自动将where标签中内容前多余的AND去掉，但是其中国内容后多余的AND不能去掉
+                 c，若where标签中没有任何一个条件成立，则where没有任何功能
+      3，trim ： prefix，suffix：在标签中内容前面或后面添加指定内容
+                 prefixOverrides，suffixOverrides ： 在标签中内容前面或后面去掉指定内容
+      4，choose，when，otherwise：
+        相当于Java中的if...else if...else
+        when至少设置一个，otherwise至多设置一个
+      5，foreach
+    -->
+
+    <!-- 动态sql之 if标签
+    if ： 通过test属性中的表达式判断标签中的内容是否有效（是否会拼接到sql中） -->
+    <!-- List<Emp> getEmpByCondition(Emp emp); -->
+    <select id="getEmpByConditionByIf" resultType="Emp">
+        SELECT emp_id, emp_name, age, gender, dept_id
+        FROM t_emp
+        WHERE 1=1
+        <if test="empName != '' and empName != null">
+            AND emp_name = #{empName}
+        </if>
+        <if test="age != '' and age != null">
+            AND age = #{age}
+        </if>
+        <if test="gender != '' and gender != null">
+            AND gender = #{gender}
+        </if>
+    </select>
+
+    <!-- 动态sql之 where标签
+    where ： a，若where标签中有条件成立，会自动生成where关键字
+                 b，会自动将where标签中内容前多余的AND去掉，但是其中国内容后多余的AND不能去掉
+                 c，若where标签中没有任何一个条件成立，则where没有任何功能  -->
+    <!-- List<Emp> getEmpByCondition(Emp emp); -->
+    <select id="getEmpByConditionByWhere" resultType="Emp">
+        SELECT emp_id, emp_name, age, gender, dept_id
+        FROM t_emp
+        <where>
+            <if test="empName != '' and empName != null">
+                emp_name = #{empName}
+            </if>
+            <if test="age != '' and age != null">
+                AND age = #{age}
+            </if>
+            <if test="gender != '' and gender != null">
+                AND gender = #{gender}
+            </if>
+        </where>
+    </select>
+
+    <!-- 动态sql之 trim标签
+     trim ： prefix，suffix：在标签中内容前面或后面添加指定内容
+             prefixOverrides，suffixOverrides ： 在标签中内容前面或后面去掉指定内容  -->
+    <!-- List<Emp> getEmpByCondition(Emp emp); -->
+    <select id="getEmpByCondition" resultType="Emp">
+        SELECT emp_id, emp_name, age, gender, dept_id
+        FROM t_emp
+        <trim prefix="WHERE" suffixOverrides="AND">
+            <if test="empName != '' and empName != null">
+                emp_name = #{empName} AND
+            </if>
+            <if test="age != '' and age != null">
+                age = #{age} AND
+            </if>
+            <if test="gender != '' and gender != null">
+                gender = #{gender}
+            </if>
+        </trim>
+    </select>
+
+    <!-- 动态sql之 choose，when，otherwise标签
+    choose，when，otherwise：
+        相当于Java中的if...else if...else
+        when至少设置一个，otherwise至多设置一个
+    -->
+    <!-- List<Emp> getEmpByChoose(Emp emp); -->
+    <select id="getEmpByChoose" resultType="Emp">
+        SELECT emp_id, emp_name, age, gender, dept_id
+        FROM t_emp
+        <where>
+            <choose>
+                <when test="empName != '' and empName != null">
+                    emp_name = #{empName}
+                </when>
+                <when test="age != '' and age != null">
+                    age = #{age}
+                </when>
+                <when test="gender != '' and gender != null">
+                    gender = #{gender}
+                </when>
+                <otherwise>
+
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <!-- 动态sql之 foreach标签 ： 批量添加 -->
+    <!-- Integer insertMoreEmp(@Param("emps") List<Emp> emps); -->
+    <insert id="insertMoreEmp" useGeneratedKeys="true" keyProperty="empId">
+        INSERT INTO t_emp(emp_name, age, gender)
+        VALUES
+        <foreach collection="emps" item="emp" separator=",">
+            (#{emp.empName},#{emp.age},#{emp.gender})
+        </foreach>
+    </insert>
+    <!--
+    也可以使用<trim suffixOverrides=","></trim>标签去掉括号后的“ , ”
+    -->
+
+    <!-- 动态sql之 foreach标签 ： 批量删除 -->
+    <!-- Integer deleteMoreEmp(@Param("empIds") Integer[] empIds); -->
+    <delete id="deleteMoreEmp">
+        <!--
+        DELETE
+        FROM t_emp
+        WHERE emp_id IN
+        (
+        <foreach collection="empIds" item="empId" separator=",">
+            #{empId}
+        </foreach>
+        )
+            -->
+        DELETE
+        FROM t_emp
+        WHERE
+        <foreach collection="empIds" item="empId" separator="OR">
+            emp_id = #{empId}
+        </foreach>
+    </delete>
+
+</mapper>
