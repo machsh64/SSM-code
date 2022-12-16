@@ -14,11 +14,27 @@
                  c，若where标签中没有任何一个条件成立，则where没有任何功能
       3，trim ： prefix，suffix：在标签中内容前面或后面添加指定内容
                  prefixOverrides，suffixOverrides ： 在标签中内容前面或后面去掉指定内容
-      4，choose，when，otherwise：
+      4，choose，when，otherwise ：
         相当于Java中的if...else if...else
         when至少设置一个，otherwise至多设置一个
-      5，foreach
+      5，foreach ：
+         collection ： 用来设置要循环的数组或集合
+         item ： 用一个字符串表示数组或集合中的每一个数据
+         separator ： 设置每次循环的数据之间的分隔符
+         open ： 循环的所有内容以什么开始
+         close ： 循环的所有内容以什么结束
+      6，sql片段 ：
+      可以记录一段sql，在需要用的地方使用include标签进行引用
+        <sql id="empColumns">
+        emp_id,emp_name,age,gender,dept_id
+        </sql>
+        <include refid='empColumns'/>
     -->
+
+    <sql id="empColumns">
+        emp_id,emp_name,age,gender,dept_id
+    </sql>
+    <!-- 使用时只需要利用<include refid='empColumns'/> 在sql语句中引入即可代替使用所有sql字段或者 *  -->
 
     <!-- 动态sql之 if标签
     if ： 通过test属性中的表达式判断标签中的内容是否有效（是否会拼接到sql中） -->
@@ -106,7 +122,14 @@
         </where>
     </select>
 
-    <!-- 动态sql之 foreach标签 ： 批量添加 -->
+    <!-- 动态sql之 foreach标签 ： 批量添加
+      foreach ：
+         collection ： 用来设置要循环的数组或集合
+         item ： 用一个字符串表示数组或集合中的每一个数据
+         separator ： 设置每次循环的数据之间的分隔符
+         open ： 循环的所有内容以什么开始
+         close ： 循环的所有内容以什么结束
+    -->
     <!-- Integer insertMoreEmp(@Param("emps") List<Emp> emps); -->
     <insert id="insertMoreEmp" useGeneratedKeys="true" keyProperty="empId">
         INSERT INTO t_emp(emp_name, age, gender)

@@ -17,14 +17,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f11edad3-7511-4127-8545-baf724e51534" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/04mybatis_dynamicSQL/src/main/java/com/ren/mybatis/mapper/DynamicSQLMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04mybatis_dynamicSQL/src/main/java/com/ren/mybatis/pojo/Emp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04mybatis_dynamicSQL/src/main/resources/com/ren/mybatis/mapper/DynamicSQLMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04mybatis_dynamicSQL/src/test/java/com/ren/mybatis/test/DynamicMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01mybatis_helloworld/01mybatis_helloworld.iml" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/01mybatis_helloworld.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02mybatis_parameter/02mybatis_parameter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/02mybatis_parameter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03mybaits-resultMap/03mybaits-resultMap.iml" beforeDir="false" afterPath="$PROJECT_DIR$/03mybaits-resultMap/03mybaits-resultMap.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04mybatis_dynamicSQL/04mybatis_dynamicSQL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/04mybatis_dynamicSQL/04mybatis_dynamicSQL.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05mybatis_catch/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05mybatis_catch/src/main/java/com/ren/mybatis/mapper/CacheMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05mybatis_catch/src/main/java/com/ren/mybatis/pojo/Emp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05mybatis_catch/src/main/java/com/ren/mybatis/utils/SqlSessionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05mybatis_catch/src/main/resources/com/ren/mybatis/mapper/CacheMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05mybatis_catch/src/main/resources/ehcache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05mybatis_catch/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05mybatis_catch/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05mybatis_catch/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05mybatis_catch/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05mybatis_catch/src/test/java/com/ren/mybatis/test/CacheMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01mybatis_helloworld/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01mybatis_helloworld/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02mybatis_parameter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02mybatis_parameter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03mybaits-resultMap/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/03mybaits-resultMap/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04mybatis_dynamicSQL/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/04mybatis_dynamicSQL/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04mybatis_dynamicSQL/target/classes/com/ren/mybatis/mapper/DynamicSQLMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/04mybatis_dynamicSQL/target/classes/com/ren/mybatis/mapper/DynamicSQLMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04mybatis_dynamicSQL/target/classes/com/ren/mybatis/mapper/DynamicSQLMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/04mybatis_dynamicSQL/target/classes/com/ren/mybatis/mapper/DynamicSQLMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04mybatis_dynamicSQL/target/classes/com/ren/mybatis/pojo/Emp.class" beforeDir="false" afterPath="$PROJECT_DIR$/04mybatis_dynamicSQL/target/classes/com/ren/mybatis/pojo/Emp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04mybatis_dynamicSQL/target/classes/com/ren/mybatis/utils/SqlSessionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/04mybatis_dynamicSQL/target/classes/com/ren/mybatis/utils/SqlSessionUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,17 +45,27 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="jdbc" />
         <option value="mybatis-config" />
+        <option value="jdbc" />
         <option value="log4j" />
         <option value="Interface" />
         <option value="mybatis-mapper" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Maven\maven-repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../Maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2IimP7Gv6TU6g0RtMbsKsH7cuG3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -66,22 +87,56 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.19340974" />
     <property name="project.structure.side.proportion" value="0.289899" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\RenComp\SSM\mybatis_helloworld\src\main\resources\com\ren\mybatis\mapper" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ren.mybatis.utils" />
-      <recent name="com.ren.mybatis.pojo" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\RenComp\SSM\03mybaits-resultMap\src\main\resources" />
       <recent name="D:\RenComp\SSM\mybatis_parameter\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ren.mybatis.pojo" />
+      <recent name="com.ren.mybatis.utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\RenComp\SSM\05mybatis_catch\src\main\resources\com\ren\mybatis" />
+      <recent name="D:\RenComp\SSM\05mybatis_catch\src\main\resources" />
+      <recent name="D:\RenComp\SSM\mybatis_helloworld\src\main\resources\com\ren\mybatis\mapper" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.DynamicMapperTest.testDeleteMoreEmp">
+  <component name="RunManager" selected="JUnit.CacheMapperTest.testCatch">
+    <configuration name="CacheMapperTest.testCatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="05mybatis_catch" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ren.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.CacheMapperTest" />
+      <option name="METHOD_NAME" value="testCatch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CacheMapperTest.testGetEmpById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="05mybatis_catch" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ren.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.CacheMapperTest" />
+      <option name="METHOD_NAME" value="testGetEmpById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DynamicMapperTest.testDeleteMoreEmp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="04mybatis_dynamicSQL" />
       <extension name="coverage">
@@ -114,22 +169,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DynamicMapperTest.testGetEmpByCondition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="04mybatis_dynamicSQL" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ren.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.DynamicMapperTest" />
-      <option name="METHOD_NAME" value="testGetEmpByCondition" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DynamicMapperTest.testInsertMoreEmp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="04mybatis_dynamicSQL" />
       <extension name="coverage">
@@ -146,34 +185,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultMapTest.testGetDeptAndEmpByDeptIdByStep" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="03mybaits-resultMap" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ren.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ren.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ren.mybatis.test.ResultMapTest" />
-      <option name="METHOD_NAME" value="testGetDeptAndEmpByDeptIdByStep" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CacheMapperTest.testCatch" />
+        <item itemvalue="JUnit.CacheMapperTest.testGetEmpById" />
         <item itemvalue="JUnit.DynamicMapperTest.testDeleteMoreEmp" />
         <item itemvalue="JUnit.DynamicMapperTest.testInsertMoreEmp" />
         <item itemvalue="JUnit.DynamicMapperTest.testGetEmpByChoose" />
-        <item itemvalue="JUnit.DynamicMapperTest.testGetEmpByCondition" />
-        <item itemvalue="JUnit.ResultMapTest.testGetDeptAndEmpByDeptIdByStep" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\machs\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -184,7 +207,8 @@
       <updated>1670672750108</updated>
       <workItem from="1670672751309" duration="2827000" />
       <workItem from="1670676014784" duration="44548000" />
-      <workItem from="1671011104815" duration="24961000" />
+      <workItem from="1671011104815" duration="28055000" />
+      <workItem from="1671179698441" duration="8631000" />
     </task>
     <servers />
   </component>
@@ -237,14 +261,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670832373202" />
+    <state x="716" y="343" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1671188569335">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="716" y="343" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671188569335" />
     <state x="709" y="377" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1670840206064">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="709" y="377" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670840206064" />
-    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1671099263904">
+    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1671184725118">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671099263904" />
+    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671184725118" />
     <state x="841" y="314" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1671096571991">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -257,27 +285,27 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="DiffContextDialog/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670675872252" />
-    <state x="676" y="268" key="FileChooserDialogImpl" timestamp="1671096535493">
+    <state x="676" y="268" key="FileChooserDialogImpl" timestamp="1671182561998">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="676" y="268" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671096535493" />
+    <state x="676" y="268" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671182561998" />
     <state x="2435" y="204" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1670825858278" />
-    <state width="1876" height="240" key="GridCell.Tab.0.bottom" timestamp="1671107927312">
+    <state width="1876" height="240" key="GridCell.Tab.0.bottom" timestamp="1671186765412">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="240" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671107927312" />
-    <state width="1876" height="240" key="GridCell.Tab.0.center" timestamp="1671107927312">
+    <state width="1876" height="240" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671186765412" />
+    <state width="1876" height="240" key="GridCell.Tab.0.center" timestamp="1671186765412">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="240" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671107927312" />
-    <state width="1876" height="240" key="GridCell.Tab.0.left" timestamp="1671107927311">
+    <state width="1876" height="240" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671186765412" />
+    <state width="1876" height="240" key="GridCell.Tab.0.left" timestamp="1671186765412">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="240" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671107927311" />
-    <state width="1876" height="240" key="GridCell.Tab.0.right" timestamp="1671107927312">
+    <state width="1876" height="240" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671186765412" />
+    <state width="1876" height="240" key="GridCell.Tab.0.right" timestamp="1671186765412">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="240" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671107927312" />
+    <state width="1876" height="240" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671186765412" />
     <state width="1876" height="364" key="GridCell.Tab.1.right" timestamp="1670683630213">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -286,22 +314,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="538" y="296" key="NewModule_or_Project.wizard/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671008512405" />
-    <state x="451" y="132" width="1192" height="766" key="SettingsEditor" timestamp="1671100365411">
+    <state x="451" y="132" width="1192" height="766" key="SettingsEditor" timestamp="1671182758075">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="451" y="132" width="1192" height="766" key="SettingsEditor/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671100365411" />
+    <state x="451" y="132" width="1192" height="766" key="SettingsEditor/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671182758075" />
     <state x="769" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1670675872225">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="769" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670675872225" />
-    <state x="477" y="228" key="new project wizard" timestamp="1671098664974">
+    <state x="477" y="228" key="new project wizard" timestamp="1671181560342">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="477" y="228" key="new project wizard/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671098664974" />
+    <state x="477" y="228" key="new project wizard/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671181560342" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1671101241579">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="616" y="250" key="run.anything.popup/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671101241579" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1671185904176">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671185904176" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

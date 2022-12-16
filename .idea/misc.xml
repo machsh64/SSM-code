@@ -16,6 +16,7 @@
         <option value="$PROJECT_DIR$/02mybatis_parameter/pom.xml" />
         <option value="$PROJECT_DIR$/03mybaits-resultMap/pom.xml" />
         <option value="$PROJECT_DIR$/04mybatis_dynamicSQL/pom.xml" />
+        <option value="$PROJECT_DIR$/05mybatis_catch/pom.xml" />
       </list>
     </option>
   </component>

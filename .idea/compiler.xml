@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="05mybatis_catch" />
         <module name="04mybatis_dynamicSQL" />
         <module name="02mybatis_parameter" />
         <module name="01mybatis_helloworld" />
@@ -13,10 +14,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="01mybatis_helloworld" target="8" />
-      <module name="02mybatis_parameter" target="8" />
-      <module name="03mybaits-resultMap" target="8" />
-      <module name="04mybatis_dynamicSQL" target="8" />
+      <module name="01mybatis_helloworld" target="1.8" />
+      <module name="02mybatis_parameter" target="1.8" />
+      <module name="03mybaits-resultMap" target="1.8" />
+      <module name="04mybatis_dynamicSQL" target="1.8" />
+      <module name="05mybatis_catch" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

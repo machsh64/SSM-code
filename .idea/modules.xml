@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/02mybatis_parameter/02mybatis_parameter.iml" filepath="$PROJECT_DIR$/02mybatis_parameter/02mybatis_parameter.iml" />
       <module fileurl="file://$PROJECT_DIR$/03mybaits-resultMap/03mybaits-resultMap.iml" filepath="$PROJECT_DIR$/03mybaits-resultMap/03mybaits-resultMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/04mybatis_dynamicSQL/04mybatis_dynamicSQL.iml" filepath="$PROJECT_DIR$/04mybatis_dynamicSQL/04mybatis_dynamicSQL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05mybatis_catch/05mybatis_catch.iml" filepath="$PROJECT_DIR$/05mybatis_catch/05mybatis_catch.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SSM.iml" filepath="$PROJECT_DIR$/.idea/SSM.iml" />
     </modules>
   </component>

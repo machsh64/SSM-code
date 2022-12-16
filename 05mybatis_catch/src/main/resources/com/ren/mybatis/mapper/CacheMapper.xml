@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace对应mapper接口的全类型 -->
+<mapper namespace="com.ren.mybatis.mapper.CacheMapper">
+    <!-- sql语句填写区 例：<select id="mapper接口中的方法" resultType="数据类型全类名/别名">sql语句</select>-->
+
+    <cache type="org.mybatis.caches.ehcache.EhcacheCache"/>
+
+    <!-- Emp getEmpById(@Param("empId") Integer EmpId); -->
+    <select id="getEmpById" resultType="Emp">
+        SELECT emp_id, emp_name, age, gender
+        FROM t_emp
+        WHERE emp_id = #{empId}
+    </select>
+
+    <!-- Integer insertEmp(Emp emp); -->
+    <insert id="insertEmp" useGeneratedKeys="true" keyProperty="emp_id">
+        INSERT INTO t_emp (emp_name, age, gender)
+        VALUES (#{empName}, #{age}, #{gender})
+    </insert>
+</mapper>
