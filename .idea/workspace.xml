@@ -17,19 +17,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f11edad3-7511-4127-8545-baf724e51534" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/08spring_ioc_xml/src/main/java/com/ren/spring/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08spring_ioc_xml/src/main/java/com/ren/spring/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08spring_ioc_xml/src/main/java/com/ren/spring/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08spring_ioc_xml/src/main/java/com/ren/spring/factory/UserFactoryBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08spring_ioc_xml/src/main/java/com/ren/spring/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08spring_ioc_xml/src/main/java/com/ren/spring/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08spring_ioc_xml/src/main/java/com/ren/spring/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08spring_ioc_xml/src/main/resources/spring-autowire-xml.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08spring_ioc_xml/src/main/resources/spring-factory.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08spring_ioc_xml/src/test/java/com/ren/spring/test/AutowireByXmlTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08spring_ioc_xml/src/test/java/com/ren/spring/test/FactoryBeanTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08spring_ioc_xml/08spring_ioc_xml.iml" beforeDir="false" afterPath="$PROJECT_DIR$/08spring_ioc_xml/08spring_ioc_xml.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08spring_ioc_xml/target/classes/spring-datasource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/08spring_ioc_xml/target/classes/spring-datasource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09spring_ioc_annotation/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09spring_ioc_annotation/src/main/java/com/ren/spring/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09spring_ioc_annotation/src/main/java/com/ren/spring/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09spring_ioc_annotation/src/main/java/com/ren/spring/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09spring_ioc_annotation/src/main/java/com/ren/spring/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09spring_ioc_annotation/src/main/java/com/ren/spring/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09spring_ioc_annotation/src/main/resources/spring-ioc-annotation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09spring_ioc_annotation/src/test/java/com/ren/spring/test/IOCByAnnotationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08spring_ioc_xml/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/08spring_ioc_xml/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08spring_ioc_xml/src/main/java/com/ren/spring/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/08spring_ioc_xml/src/main/java/com/ren/spring/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08spring_ioc_xml/src/main/java/com/ren/spring/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/08spring_ioc_xml/src/main/java/com/ren/spring/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +44,8 @@
         <option value="jdbc" />
         <option value="mybatis-config" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -86,7 +84,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.19340974" />
     <property name="project.structure.side.proportion" value="0.289899" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -104,7 +102,7 @@
       <recent name="D:\RenComp\SSM\mybatis_helloworld\src\main\resources\com\ren\mybatis\mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AutowireByXmlTest.testAutowire">
+  <component name="RunManager" selected="JUnit.IOCByAnnotationTest.test">
     <configuration name="AutowireByXmlTest.testAutowire" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="08spring_ioc_xml" />
       <extension name="coverage">
@@ -153,8 +151,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentTest.testStudentEight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="08spring_ioc_xml" />
+    <configuration name="IOCByAnnotationTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="09spring_ioc_annotation" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ren.spring.test.*" />
@@ -162,8 +160,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ren.spring.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ren.spring.test.StudentTest" />
-      <option name="METHOD_NAME" value="testStudentEight" />
+      <option name="MAIN_CLASS_NAME" value="com.ren.spring.test.IOCByAnnotationTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IOCByAnnotationTest.test" />
         <item itemvalue="JUnit.AutowireByXmlTest.testAutowire" />
         <item itemvalue="JUnit.FactoryBeanTest.testFactoryBean" />
         <item itemvalue="JUnit.DataSourceTest.testDataSource" />
         <item itemvalue="JUnit.StudentTest.testStudentTen" />
-        <item itemvalue="JUnit.StudentTest.testStudentEight" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +207,7 @@
       <workItem from="1670676014784" duration="44548000" />
       <workItem from="1671011104815" duration="28055000" />
       <workItem from="1671179698441" duration="14900000" />
-      <workItem from="1671195784014" duration="38853000" />
+      <workItem from="1671195784014" duration="48159000" />
     </task>
     <servers />
   </component>
@@ -270,10 +268,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="709" y="377" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671356837500" />
-    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1671615246750">
+    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1671628166619">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671615246750" />
+    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671628166619" />
     <state x="841" y="314" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1671096571991">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -295,25 +293,25 @@
     </state>
     <state x="676" y="268" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671435615990" />
     <state x="2435" y="204" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1670825858278" />
-    <state width="1876" height="229" key="GridCell.Tab.0.bottom" timestamp="1671619945538">
+    <state width="1876" height="258" key="GridCell.Tab.0.bottom" timestamp="1671630198947">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="229" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671619945538" />
+    <state width="1876" height="258" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671630198947" />
     <state width="1420" height="251" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1671466982337" />
-    <state width="1876" height="229" key="GridCell.Tab.0.center" timestamp="1671619945538">
+    <state width="1876" height="258" key="GridCell.Tab.0.center" timestamp="1671630198947">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="229" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671619945538" />
+    <state width="1876" height="258" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671630198947" />
     <state width="1420" height="251" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1671466982337" />
-    <state width="1876" height="229" key="GridCell.Tab.0.left" timestamp="1671619945538">
+    <state width="1876" height="258" key="GridCell.Tab.0.left" timestamp="1671630198947">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="229" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671619945538" />
+    <state width="1876" height="258" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671630198947" />
     <state width="1420" height="251" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1671466982337" />
-    <state width="1876" height="229" key="GridCell.Tab.0.right" timestamp="1671619945538">
+    <state width="1876" height="258" key="GridCell.Tab.0.right" timestamp="1671630198947">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="229" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671619945538" />
+    <state width="1876" height="258" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671630198947" />
     <state width="1420" height="251" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1671466982337" />
     <state width="1876" height="364" key="GridCell.Tab.1.right" timestamp="1670683630213">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -323,30 +321,30 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="538" y="296" key="NewModule_or_Project.wizard/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671008512405" />
-    <state x="451" y="132" width="1192" height="766" key="SettingsEditor" timestamp="1671620898621">
+    <state x="451" y="132" width="1192" height="766" key="SettingsEditor" timestamp="1671621568283">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="451" y="132" width="1192" height="766" key="SettingsEditor/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671620898621" />
+    <state x="451" y="132" width="1192" height="766" key="SettingsEditor/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671621568283" />
     <state x="769" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1670675872225">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="769" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670675872225" />
-    <state x="477" y="228" key="new project wizard" timestamp="1671355926814">
+    <state x="477" y="228" key="new project wizard" timestamp="1671621507175">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="477" y="228" key="new project wizard/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671355926814" />
+    <state x="477" y="228" key="new project wizard/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671621507175" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1671528619827">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="616" y="250" key="run.anything.popup/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671528619827" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1671526443865">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1671623734940">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671526443865" />
-    <state x="640" y="222" key="spring file set editor" timestamp="1671356183394">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671623734940" />
+    <state x="640" y="222" key="spring file set editor" timestamp="1671622028203">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="640" y="222" key="spring file set editor/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671356183394" />
+    <state x="640" y="222" key="spring file set editor/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671622028203" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

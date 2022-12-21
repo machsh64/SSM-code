@@ -20,6 +20,7 @@
         <option value="$PROJECT_DIR$/06mybatis_mbg/pom.xml" />
         <option value="$PROJECT_DIR$/07spring_helloworld/pom.xml" />
         <option value="$PROJECT_DIR$/08spring_ioc_xml/pom.xml" />
+        <option value="$PROJECT_DIR$/09spring_ioc_annotation/pom.xml" />
       </list>
     </option>
   </component>

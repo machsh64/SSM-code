@@ -30,7 +30,7 @@
       <option name="IGNORE_JAVADOC_PERIOD" value="true" />
       <option name="IGNORE_DUPLICATED_THROWS" value="false" />
       <option name="IGNORE_POINT_TO_ITSELF" value="false" />
-      <option name="myAdditionalJavadocTags" value="Date:,return:,Author:,Param:,Description:,program:,author:,create:,description:" />
+      <option name="myAdditionalJavadocTags" value="Date:,return:,Author:,Param:,Description:,program:,author:,create:,description:,Component：将类标识为普通组件,Controller：将类标识为控制层组件,Service：将类标识为业务层组件,Repository：将类标识为持久层组件,Autowired,Resource" />
     </inspection_tool>
   </profile>
 </component>

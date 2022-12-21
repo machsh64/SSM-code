@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/06mybatis_mbg/06mybatis_mbg.iml" filepath="$PROJECT_DIR$/06mybatis_mbg/06mybatis_mbg.iml" />
       <module fileurl="file://$PROJECT_DIR$/07spring_helloworld/07spring_helloworld.iml" filepath="$PROJECT_DIR$/07spring_helloworld/07spring_helloworld.iml" />
       <module fileurl="file://$PROJECT_DIR$/08spring_ioc_xml/08spring_ioc_xml.iml" filepath="$PROJECT_DIR$/08spring_ioc_xml/08spring_ioc_xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09spring_ioc_annotation/09spring_ioc_annotation.iml" filepath="$PROJECT_DIR$/09spring_ioc_annotation/09spring_ioc_annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SSM.iml" filepath="$PROJECT_DIR$/.idea/SSM.iml" />
     </modules>
   </component>

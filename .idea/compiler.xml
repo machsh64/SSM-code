@@ -9,6 +9,7 @@
         <module name="05mybatis_catch" />
         <module name="06mybatis_mbg" />
         <module name="02mybatis_parameter" />
+        <module name="09spring_ioc_annotation" />
         <module name="01mybatis_helloworld" />
         <module name="04mybatis_dynamicSQL" />
         <module name="08spring_ioc_xml" />
@@ -25,6 +26,7 @@
       <module name="06mybatis_mbg" target="1.8" />
       <module name="07spring_helloworld" target="1.8" />
       <module name="08spring_ioc_xml" target="1.8" />
+      <module name="09spring_ioc_annotation" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
