@@ -7,6 +7,9 @@
       <module fileurl="file://$PROJECT_DIR$/03mybaits-resultMap/03mybaits-resultMap.iml" filepath="$PROJECT_DIR$/03mybaits-resultMap/03mybaits-resultMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/04mybatis_dynamicSQL/04mybatis_dynamicSQL.iml" filepath="$PROJECT_DIR$/04mybatis_dynamicSQL/04mybatis_dynamicSQL.iml" />
       <module fileurl="file://$PROJECT_DIR$/05mybatis_catch/05mybatis_catch.iml" filepath="$PROJECT_DIR$/05mybatis_catch/05mybatis_catch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06mybatis_mbg/06mybatis_mbg.iml" filepath="$PROJECT_DIR$/06mybatis_mbg/06mybatis_mbg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07spring_helloworld/07spring_helloworld.iml" filepath="$PROJECT_DIR$/07spring_helloworld/07spring_helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08spring_ioc_xml/08spring_ioc_xml.iml" filepath="$PROJECT_DIR$/08spring_ioc_xml/08spring_ioc_xml.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SSM.iml" filepath="$PROJECT_DIR$/.idea/SSM.iml" />
     </modules>
   </component>

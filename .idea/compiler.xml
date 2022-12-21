@@ -7,10 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="05mybatis_catch" />
-        <module name="04mybatis_dynamicSQL" />
+        <module name="06mybatis_mbg" />
         <module name="02mybatis_parameter" />
         <module name="01mybatis_helloworld" />
+        <module name="04mybatis_dynamicSQL" />
+        <module name="08spring_ioc_xml" />
         <module name="03mybaits-resultMap" />
+        <module name="07spring_helloworld" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -19,6 +22,9 @@
       <module name="03mybaits-resultMap" target="1.8" />
       <module name="04mybatis_dynamicSQL" target="1.8" />
       <module name="05mybatis_catch" target="1.8" />
+      <module name="06mybatis_mbg" target="1.8" />
+      <module name="07spring_helloworld" target="1.8" />
+      <module name="08spring_ioc_xml" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

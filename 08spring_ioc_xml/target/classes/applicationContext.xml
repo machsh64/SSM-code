@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="studentOne" class="com.ren.spring.pojo.Student"/>
+
+    <!--
+      通过setter对类中属性进行赋值
+    -->
+    <bean id="studentTwo" class="com.ren.spring.pojo.Student">
+        <property name="sid" value="1"/>
+        <property name="sname" value="克晴"/>
+        <property name="age" value="17"/>
+        <property name="gender" value="女"/>
+    </bean>
+
+    <!--
+      通过有参构造器对类中属性进行赋值
+    -->
+    <bean id="studentThr" class="com.ren.spring.pojo.Student">
+        <constructor-arg value="1001"/>
+        <constructor-arg value="克晴"/>
+        <constructor-arg value="17"/>
+        <constructor-arg value="女"/>
+    </bean>
+
+    <!--
+      为类类型属性赋值
+      1，引用外部的bean 使用ref进行引用ioc容器中的某个bean的id
+    -->
+    <bean id="clazzOne" class="com.ren.spring.pojo.Clazz">
+        <property name="cid" value="1101"/>
+        <property name="cname" value="暗杀教室"/>
+    </bean>
+
+    <bean id="studentFour" class="com.ren.spring.pojo.Student">
+        <property name="sid" value="1002"/>
+        <property name="sname" value="安娜苏"/>
+        <property name="age" value="23"/>
+        <property name="gender" value="男"/>
+        <property name="clazz" ref="clazzOne"/>
+    </bean>
+
+    <!--
+      为类类型属性赋值
+      2，使用级联的方式
+    -->
+    <bean id="studentFive" class="com.ren.spring.pojo.Student">
+        <property name="sid" value="1003"/>
+        <property name="sname" value="安娜苏"/>
+        <property name="age" value="23"/>
+        <property name="gender" value="男"/>
+        <!-- 要保证提前为clazz属性赋值或者实例化 -->
+        <property name="clazz" ref="clazzOne"/>   <!-- 此处必须先进行引用外部clazz，对clazz进行实例化，否则在赋值时clazz对象为null，无法进行赋值 -->
+        <property name="clazz.cid" value="1003"/>
+        <property name="clazz.cname" value="新暗杀教室"/>
+    </bean>
+
+    <!--
+    为类类型属性赋值
+    3，使用内部bean标签
+  -->
+    <bean id="studentSix" class="com.ren.spring.pojo.Student">
+        <property name="sid" value="1004"/>
+        <property name="sname" value="安娜苏"/>
+        <property name="age" value="23"/>
+        <property name="gender" value="男"/>
+        <!-- 使用内部bean标签 -->
+        <property name="clazz">
+            <bean id="clazzInner" class="com.ren.spring.pojo.Clazz">
+                <property name="cid" value="1005"/>
+                <property name="cname" value="新新暗杀教室"/>
+            </bean>
+        </property>
+    </bean>
+
+    <!--
+      为数组类型的属性赋值
+     -->
+    <bean id="studentSeven" class="com.ren.spring.pojo.Student">
+        <property name="sid" value="1005"/>
+        <property name="sname" value="安娜苏"/>
+        <property name="age" value="23"/>
+        <property name="gender" value="男"/>
+        <!-- 使用内部bean标签 -->
+        <property name="clazz">
+            <bean id="clazzInner" class="com.ren.spring.pojo.Clazz">
+                <property name="cid" value="1009"/>
+                <property name="cname" value="新新新暗杀教室"/>
+            </bean>
+        </property>
+        <property name="hobby">
+            <array>      <!-- 若数组中存储的是实体类类型的数据 则使用<ref bean="xxxXX">进行引用外部的bean赋值，或者使用内部bean标签 -->
+                <value>唱</value>
+                <value>跳</value>
+                <value>rap</value>
+                <value>篮球</value>
+            </array>
+        </property>
+    </bean>
+
+    <!--
+      为集合类型的属性赋值
+      1,List类型属性赋值
+    -->
+    <bean id="clazzTwo" class="com.ren.spring.pojo.Clazz">
+        <property name="cid" value="1101"/>
+        <property name="cname" value="暗杀教室"/>
+        <property name="studentList">
+            <list>              <!-- 根据List的泛型判断使用ref,bean标签还是value标签直接赋值 -->
+                <bean class="com.ren.spring.pojo.Student">
+                    <property name="sid" value="1000"/>
+                    <property name="sname" value="李大锤"/>
+                    <property name="age" value="22"/>
+                </bean>
+                <ref bean="studentTwo"/>
+                <ref bean="studentFour"/>
+                <ref bean="studentSeven"/>
+            </list>
+        </property>
+    </bean>
+
+
+   <!--
+    为集合类型的属性赋值
+    引入外部的util约束的list集合类型的bean标签
+   -->
+    <!-- 配置一个集合类型的bean，需要使用util的约束 -->
+    <util:list id="studentList">
+        <ref bean="studentFour"/>
+        <ref bean="studentSeven"/>
+        <ref bean="studentTwo"/>
+    </util:list>
+
+    <bean id="clazzThr" class="com.ren.spring.pojo.Clazz">
+        <property name="cid" value="1101"/>
+        <property name="cname" value="暗杀教室"/>
+        <!-- 引入外部util约束的list集合类型的bean标签数据赋值 -->
+        <property name="studentList" ref="studentList"/>
+    </bean>
+
+    <!--
+  为Map集合类型的属性赋值
+    -->
+    <bean id="teacher" class="com.ren.spring.pojo.Teacher">
+        <property name="tid" value="001"/>
+        <property name="tname" value="李梅"/>
+    </bean>
+
+    <bean id="teacher2" class="com.ren.spring.pojo.Teacher">
+        <property name="tid" value="002"/>
+        <property name="tname" value="邱小姐"/>
+    </bean>
+
+    <bean id="studentEight" class="com.ren.spring.pojo.Student">
+        <property name="sid" value="1005"/>
+        <property name="sname" value="安娜苏"/>
+        <property name="age" value="23"/>
+        <property name="gender" value="男"/>
+        <!-- 使用内部bean标签 -->
+        <property name="clazz">
+            <bean id="clazzInner" class="com.ren.spring.pojo.Clazz">
+                <property name="cid" value="1009"/>
+                <property name="cname" value="新新新暗杀教室"/>
+            </bean>
+        </property>
+        <property name="hobby">
+            <array>
+                <value>唱</value>
+                <value>跳</value>
+                <value>rap</value>
+                <value>篮球</value>
+            </array>
+        </property>
+        <property name="teacherMap">
+            <map>           <!-- 若key为字面量类型，直接使用key进行赋值，若为类类型，使用key-ref进行引用，value同理 -->
+                <entry key="10086" value-ref="teacher"/>
+                <entry key="10010" value-ref="teacher2"/>
+            </map>
+        </property>
+    </bean>
+
+    <!--
+       为Map集合类型的属性赋值
+    -->
+    <util:map id="teacherMap">
+        <entry key="10010" value-ref="teacher"/>
+        <entry key="10086" value-ref="teacher2"/>
+    </util:map>
+
+    <bean id="studentNine" class="com.ren.spring.pojo.Student">
+        <property name="sid" value="1005"/>
+        <property name="sname" value="安娜苏"/>
+        <property name="age" value="23"/>
+        <property name="gender" value="男"/>
+        <!-- 使用内部bean标签 -->
+        <property name="clazz">
+            <bean id="clazzInner" class="com.ren.spring.pojo.Clazz">
+                <property name="cid" value="1009"/>
+                <property name="cname" value="新新新暗杀教室"/>
+            </bean>
+        </property>
+        <property name="hobby">
+            <array>
+                <value>唱</value>
+                <value>跳</value>
+                <value>rap</value>
+                <value>篮球</value>
+            </array>
+        </property>                 <!-- 方法二：使用util约束的map集合引入bean赋值 -->
+        <property name="teacherMap" ref="teacherMap"/>
+    </bean>
+
+    <!-- 依赖注入值p命名空间 -->
+    <bean id="studentTen" class="com.ren.spring.pojo.Student"
+    p:sid="1007" p:sname="牛的华" p:teacherMap-ref="teacherMap"></bean>
+</beans>
