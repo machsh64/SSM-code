@@ -14,6 +14,7 @@
         <module name="04mybatis_dynamicSQL" />
         <module name="08spring_ioc_xml" />
         <module name="03mybaits-resultMap" />
+        <module name="10spring_proxy" />
         <module name="07spring_helloworld" />
       </profile>
     </annotationProcessing>
@@ -27,6 +28,7 @@
       <module name="07spring_helloworld" target="1.8" />
       <module name="08spring_ioc_xml" target="1.8" />
       <module name="09spring_ioc_annotation" target="1.8" />
+      <module name="10spring_proxy" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
