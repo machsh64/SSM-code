@@ -22,6 +22,7 @@
         <option value="$PROJECT_DIR$/08spring_ioc_xml/pom.xml" />
         <option value="$PROJECT_DIR$/09spring_ioc_annotation/pom.xml" />
         <option value="$PROJECT_DIR$/10spring_proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/11spring-aop/pom.xml" />
       </list>
     </option>
   </component>

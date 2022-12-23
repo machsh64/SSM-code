@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="05mybatis_catch" />
+        <module name="11spring-aop" />
         <module name="06mybatis_mbg" />
         <module name="02mybatis_parameter" />
         <module name="09spring_ioc_annotation" />
@@ -29,6 +30,7 @@
       <module name="08spring_ioc_xml" target="1.8" />
       <module name="09spring_ioc_annotation" target="1.8" />
       <module name="10spring_proxy" target="1.8" />
+      <module name="11spring-aop" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
