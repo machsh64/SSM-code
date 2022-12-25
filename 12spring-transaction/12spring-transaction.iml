@@ -13,6 +13,9 @@
         <fileset id="fileset" name="Spring Jdbc" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/spring-jdbc.xml</file>
         </fileset>
+        <fileset id="fileset2" name="Tx Annotation" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/tx-annotation.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
