@@ -17,12 +17,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f11edad3-7511-4127-8545-baf724e51534" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/11spring-aop/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/annotation/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/annotation/CalculatorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/annotation/LoggerAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11spring-aop/src/main/resources/aop-annotation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11spring-aop/src/test/java/com/ren/spring/test/AOPTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/annotation/ValidateAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/xml/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/xml/CalculatorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/xml/LoggerAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/xml/ValidateAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11spring-aop/src/main/resources/aop-xml.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11spring-aop/src/test/java/com/ren/spring/test/AOPByXMLTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09spring_ioc_annotation/09spring_ioc_annotation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/09spring_ioc_annotation/09spring_ioc_annotation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11spring-aop/11spring-aop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/11spring-aop/11spring-aop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/annotation/LoggerAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/annotation/LoggerAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11spring-aop/src/test/java/com/ren/spring/test/AOPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/11spring-aop/src/test/java/com/ren/spring/test/AOPByAnnotationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11spring-aop/target/classes/com/ren/spring/aop/annotation/LoggerAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/11spring-aop/target/classes/com/ren/spring/aop/annotation/LoggerAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11spring-aop/target/test-classes/com/ren/spring/test/AOPTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +46,7 @@
         <option value="jdbc" />
         <option value="mybatis-config" />
         <option value="Interface" />
+        <option value="Aspect" />
         <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
@@ -74,7 +82,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/annotation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/xml" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.19340974" />
@@ -82,23 +90,40 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\RenComp\SSM\05mybatis_catch\src\main\resources\com\ren\mybatis" />
-      <recent name="D:\RenComp\SSM\05mybatis_catch\src\main\resources" />
-      <recent name="D:\RenComp\SSM\mybatis_helloworld\src\main\resources\com\ren\mybatis\mapper" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ren.mybatis.utils" />
-      <recent name="com.ren.mybatis.pojo" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\RenComp\SSM\11spring-aop\src\main\java\com\ren\spring\aop\xml" />
       <recent name="D:\RenComp\SSM\11spring-aop\src\main\java\com\ren\spring\aop\annotation" />
       <recent name="D:\RenComp\SSM\06mybatis_mbg\src\main\resources" />
       <recent name="D:\RenComp\SSM\03mybaits-resultMap\src\main\resources" />
       <recent name="D:\RenComp\SSM\mybatis_parameter\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ren.mybatis.utils" />
+      <recent name="com.ren.mybatis.pojo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\RenComp\SSM\05mybatis_catch\src\main\resources\com\ren\mybatis" />
+      <recent name="D:\RenComp\SSM\05mybatis_catch\src\main\resources" />
+      <recent name="D:\RenComp\SSM\mybatis_helloworld\src\main\resources\com\ren\mybatis\mapper" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.AOPTest.testAOPByAnnotation">
+  <component name="RunManager" selected="JUnit.AOPByXMLTest.testAOPByXML">
+    <configuration name="AOPByXMLTest.testAOPByXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="11spring-aop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ren.spring.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ren.spring.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ren.spring.test.AOPByXMLTest" />
+      <option name="METHOD_NAME" value="testAOPByXML" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AOPTest.testAOPByAnnotation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="11spring-aop" />
       <extension name="coverage">
@@ -110,22 +135,6 @@
       <option name="PACKAGE_NAME" value="com.ren.spring.test" />
       <option name="MAIN_CLASS_NAME" value="com.ren.spring.test.AOPTest" />
       <option name="METHOD_NAME" value="testAOPByAnnotation" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AutowireByXmlTest.testAutowire" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="08spring_ioc_xml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ren.spring.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ren.spring.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ren.spring.test.AutowireByXmlTest" />
-      <option name="METHOD_NAME" value="testAutowire" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -181,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AOPByXMLTest.testAOPByXML" />
         <item itemvalue="JUnit.AOPTest.testAOPByAnnotation" />
         <item itemvalue="JUnit.ProxyTest.testProxyFactory" />
         <item itemvalue="JUnit.ProxyTest.testProxy" />
         <item itemvalue="JUnit.IOCByAnnotationTest.test" />
-        <item itemvalue="JUnit.AutowireByXmlTest.testAutowire" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +215,8 @@
       <workItem from="1670676014784" duration="44548000" />
       <workItem from="1671011104815" duration="28055000" />
       <workItem from="1671179698441" duration="14900000" />
-      <workItem from="1671195784014" duration="67807000" />
+      <workItem from="1671195784014" duration="69594000" />
+      <workItem from="1671959196087" duration="2543000" />
     </task>
     <servers />
   </component>
@@ -292,25 +302,25 @@
     </state>
     <state x="676" y="268" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671435615990" />
     <state x="2435" y="204" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1670825858278" />
-    <state width="1876" height="241" key="GridCell.Tab.0.bottom" timestamp="1671795010245">
+    <state width="1876" height="216" key="GridCell.Tab.0.bottom" timestamp="1671961506059">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="241" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671795010245" />
+    <state width="1876" height="216" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671961506059" />
     <state width="1420" height="251" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1671466982337" />
-    <state width="1876" height="241" key="GridCell.Tab.0.center" timestamp="1671795010244">
+    <state width="1876" height="216" key="GridCell.Tab.0.center" timestamp="1671961506059">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="241" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671795010244" />
+    <state width="1876" height="216" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671961506059" />
     <state width="1420" height="251" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1671466982337" />
-    <state width="1876" height="241" key="GridCell.Tab.0.left" timestamp="1671795010244">
+    <state width="1876" height="216" key="GridCell.Tab.0.left" timestamp="1671961506059">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="241" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671795010244" />
+    <state width="1876" height="216" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671961506059" />
     <state width="1420" height="251" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1671466982337" />
-    <state width="1876" height="241" key="GridCell.Tab.0.right" timestamp="1671795010244">
+    <state width="1876" height="216" key="GridCell.Tab.0.right" timestamp="1671961506059">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="241" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671795010244" />
+    <state width="1876" height="216" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671961506059" />
     <state width="1420" height="251" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1671466982337" />
     <state width="1876" height="364" key="GridCell.Tab.1.right" timestamp="1670683630213">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -328,14 +338,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="769" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671701562423" />
-    <state x="477" y="228" key="new project wizard" timestamp="1671787279147">
+    <state x="477" y="228" key="new project wizard" timestamp="1671864216169">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="477" y="228" key="new project wizard/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671787279147" />
-    <state x="616" y="250" key="run.anything.popup" timestamp="1671528619827">
+    <state x="477" y="228" key="new project wizard/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671864216169" />
+    <state x="616" y="250" width="672" height="677" key="run.anything.popup" timestamp="1671960834272">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="616" y="250" key="run.anything.popup/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671528619827" />
+    <state x="616" y="250" width="672" height="677" key="run.anything.popup/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671960834272" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1671698446677">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

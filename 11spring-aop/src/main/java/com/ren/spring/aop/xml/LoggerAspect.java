@@ -1,4 +1,4 @@
-package com.ren.spring.aop.annotation;
+package com.ren.spring.aop.xml;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -44,17 +44,12 @@ import java.util.Arrays;
  *                 可以通过@Order注解的value属性设置优先级，默认值Integer的最大值
  *                 @Order 注解的value属性值越小，优先级越高
  **/
-@Aspect  //通过Aspect注解将当前组件注册为切面
 @Component
 public class LoggerAspect {
 
-    // 切入点表达式
-    @Pointcut("execution(* com.ren.spring.aop.annotation.CalculatorImpl.*(..))")
-    public void pointCut() {
-    }
+
 
     // 环绕通知的方法的返回值一定要和目标对象方法的返回值一致
-    @Around("pointCut()")
     public Object aroundAdviceMethod(ProceedingJoinPoint joinPoint){
         Object result = null;
         try {
@@ -71,9 +66,6 @@ public class LoggerAspect {
         return result;
     }
 
-    //@Before("execution(public int com.ren.spring.aop.annotation.CalculatorImpl.add(int,int))")
-    //@Before("execution(* com.ren.spring.aop.annotation.CalculatorImpl.*(..))")
-    @Before("pointCut()")
     public void beforeAdviceMethod(JoinPoint joinPoint) {
         // 获取连接点所对应的方法的签名信息
         String methodName = joinPoint.getSignature().getName();
@@ -82,25 +74,16 @@ public class LoggerAspect {
         System.out.println("LoggerAspect, 前置通知 方法：" + methodName + "  参数：" + args);
     }
 
-    // 在返回通知中若要获取目标对象的返回值
-    // 只需要通过@AfterRetruning注解的returning属性
-    // 就可以将通知方法的某个参数指定为接受目标方法的返回值的参数
-    @AfterReturning(value = "pointCut()",returning = "result")   //标签中returning 用来设置获取返回值的参数
     public void afterReturningAdviceMethod(JoinPoint joinPoint,Object result) {
         String methodName = joinPoint.getSignature().getName();
         System.out.println("LoggerAspect, 返回通知 方法：" + methodName+" ，result："+result);
     }
 
-    // 在异常通知中若要获取目标方法的异常
-    // 只需要通过AfterThrowing注解的throwing属性
-    // 就可以将通知方法的某个参数指定为接收目标对象方法出现的异常的参数
-    @AfterThrowing(value = "pointCut()",throwing = "exception")
     public void afterThrowingAdviceMethod(JoinPoint joinPoint,Throwable exception) {
         String methodName = joinPoint.getSignature().getName();
         System.out.println("LoggerAspect, 异常通知 方法：" + methodName + "，异常类型为："+exception);
     }
 
-    @After("pointCut()")
     public void afterAdviceMethod(JoinPoint joinPoint) {
         String methodName = joinPoint.getSignature().getName();
         System.out.println("LoggerAspect, 后置通知 方法：" + methodName + " ，执行完毕");

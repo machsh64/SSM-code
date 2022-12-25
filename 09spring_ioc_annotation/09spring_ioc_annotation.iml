@@ -5,6 +5,7 @@
       <configuration>
         <fileset id="fileset" name="Spring Ico Annotation" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/spring-ico-annotation.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring-ioc-annotation.xml</file>
         </fileset>
       </configuration>
     </facet>

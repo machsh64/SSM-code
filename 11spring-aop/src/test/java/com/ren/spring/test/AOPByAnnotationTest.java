@@ -1,8 +1,6 @@
 package com.ren.spring.test;
 
 import com.ren.spring.aop.annotation.Calculator;
-import com.ren.spring.aop.annotation.CalculatorImpl;
-import com.ren.spring.aop.annotation.LoggerAspect;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -13,7 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @create: 2022-12-23 18:00
  * @description:
  **/
-public class AOPTest {
+public class AOPByAnnotationTest {
 
     @Test
     public void testAOPByAnnotation() {
