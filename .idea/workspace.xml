@@ -17,19 +17,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f11edad3-7511-4127-8545-baf724e51534" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/annotation/ValidateAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/xml/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/xml/CalculatorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/xml/LoggerAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/xml/ValidateAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11spring-aop/src/main/resources/aop-xml.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11spring-aop/src/test/java/com/ren/spring/test/AOPByXMLTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09spring_ioc_annotation/09spring_ioc_annotation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/09spring_ioc_annotation/09spring_ioc_annotation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11spring-aop/11spring-aop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/11spring-aop/11spring-aop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/annotation/LoggerAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/11spring-aop/src/main/java/com/ren/spring/aop/annotation/LoggerAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11spring-aop/src/test/java/com/ren/spring/test/AOPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/11spring-aop/src/test/java/com/ren/spring/test/AOPByAnnotationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11spring-aop/target/classes/com/ren/spring/aop/annotation/LoggerAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/11spring-aop/target/classes/com/ren/spring/aop/annotation/LoggerAspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11spring-aop/target/test-classes/com/ren/spring/test/AOPTest.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/12spring-transaction/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12spring-transaction/src/main/java/com/ren/spring/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12spring-transaction/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12spring-transaction/src/main/resources/spring-jdbc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12spring-transaction/src/test/java/com/ren/spring/test/JdbcTemplateTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +35,10 @@
         <option value="mybatis-mapper" />
         <option value="FxmlFile" />
         <option value="generatorConfig" />
-        <option value="jdbc" />
         <option value="mybatis-config" />
         <option value="Interface" />
         <option value="Aspect" />
+        <option value="jdbc" />
         <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
@@ -107,7 +99,7 @@
       <recent name="D:\RenComp\SSM\mybatis_helloworld\src\main\resources\com\ren\mybatis\mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AOPByXMLTest.testAOPByXML">
+  <component name="RunManager" selected="JUnit.JdbcTemplateTest.testQueryCount">
     <configuration name="AOPByXMLTest.testAOPByXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="11spring-aop" />
       <extension name="coverage">
@@ -124,8 +116,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AOPTest.testAOPByAnnotation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="11spring-aop" />
+    <configuration name="JdbcTemplateTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="12spring-transaction" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ren.spring.test.*" />
@@ -133,15 +125,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ren.spring.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ren.spring.test.AOPTest" />
-      <option name="METHOD_NAME" value="testAOPByAnnotation" />
+      <option name="MAIN_CLASS_NAME" value="com.ren.spring.test.JdbcTemplateTest" />
+      <option name="METHOD_NAME" value="testInsert" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IOCByAnnotationTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="09spring_ioc_annotation" />
+    <configuration name="JdbcTemplateTest.testQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="12spring-transaction" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ren.spring.test.*" />
@@ -149,40 +141,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ren.spring.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ren.spring.test.IOCByAnnotationTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="com.ren.spring.test.JdbcTemplateTest" />
+      <option name="METHOD_NAME" value="testQuery" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProxyTest.testProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="10spring_proxy" />
+    <configuration name="JdbcTemplateTest.testQueryAllUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="12spring-transaction" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ren.proxy.*" />
+          <option name="PATTERN" value="com.ren.spring.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ren.proxy" />
-      <option name="MAIN_CLASS_NAME" value="com.ren.proxy.ProxyTest" />
-      <option name="METHOD_NAME" value="testProxy" />
+      <option name="PACKAGE_NAME" value="com.ren.spring.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ren.spring.test.JdbcTemplateTest" />
+      <option name="METHOD_NAME" value="testQueryAllUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProxyTest.testProxyFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="10spring_proxy" />
+    <configuration name="JdbcTemplateTest.testQueryCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="12spring-transaction" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ren.proxy.*" />
+          <option name="PATTERN" value="com.ren.spring.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ren.proxy" />
-      <option name="MAIN_CLASS_NAME" value="com.ren.proxy.ProxyTest" />
-      <option name="METHOD_NAME" value="testProxyFactory" />
+      <option name="PACKAGE_NAME" value="com.ren.spring.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ren.spring.test.JdbcTemplateTest" />
+      <option name="METHOD_NAME" value="testQueryCount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -190,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JdbcTemplateTest.testQueryCount" />
+        <item itemvalue="JUnit.JdbcTemplateTest.testQueryAllUser" />
+        <item itemvalue="JUnit.JdbcTemplateTest.testQuery" />
+        <item itemvalue="JUnit.JdbcTemplateTest.testInsert" />
         <item itemvalue="JUnit.AOPByXMLTest.testAOPByXML" />
-        <item itemvalue="JUnit.AOPTest.testAOPByAnnotation" />
-        <item itemvalue="JUnit.ProxyTest.testProxyFactory" />
-        <item itemvalue="JUnit.ProxyTest.testProxy" />
-        <item itemvalue="JUnit.IOCByAnnotationTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +208,7 @@
       <workItem from="1671011104815" duration="28055000" />
       <workItem from="1671179698441" duration="14900000" />
       <workItem from="1671195784014" duration="69594000" />
-      <workItem from="1671959196087" duration="2543000" />
+      <workItem from="1671959196087" duration="6291000" />
     </task>
     <servers />
   </component>
@@ -277,10 +269,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="709" y="377" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671700313453" />
-    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1671702195283">
+    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1671964220509">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671702195283" />
+    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671964220509" />
     <state x="841" y="314" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1671096571991">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -302,25 +294,25 @@
     </state>
     <state x="676" y="268" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671435615990" />
     <state x="2435" y="204" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1670825858278" />
-    <state width="1876" height="216" key="GridCell.Tab.0.bottom" timestamp="1671961506059">
+    <state width="1876" height="195" key="GridCell.Tab.0.bottom" timestamp="1671964798594">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="216" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671961506059" />
+    <state width="1876" height="195" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671964798594" />
     <state width="1420" height="251" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1671466982337" />
-    <state width="1876" height="216" key="GridCell.Tab.0.center" timestamp="1671961506059">
+    <state width="1876" height="195" key="GridCell.Tab.0.center" timestamp="1671964798594">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="216" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671961506059" />
+    <state width="1876" height="195" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671964798594" />
     <state width="1420" height="251" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1671466982337" />
-    <state width="1876" height="216" key="GridCell.Tab.0.left" timestamp="1671961506059">
+    <state width="1876" height="195" key="GridCell.Tab.0.left" timestamp="1671964798594">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="216" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671961506059" />
+    <state width="1876" height="195" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671964798594" />
     <state width="1420" height="251" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1671466982337" />
-    <state width="1876" height="216" key="GridCell.Tab.0.right" timestamp="1671961506059">
+    <state width="1876" height="195" key="GridCell.Tab.0.right" timestamp="1671964798594">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="216" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671961506059" />
+    <state width="1876" height="195" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671964798594" />
     <state width="1420" height="251" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1671466982337" />
     <state width="1876" height="364" key="GridCell.Tab.1.right" timestamp="1670683630213">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -330,18 +322,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="538" y="296" key="NewModule_or_Project.wizard/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671008512405" />
-    <state x="451" y="132" width="1192" height="766" key="SettingsEditor" timestamp="1671787532648">
+    <state x="451" y="132" width="1192" height="766" key="SettingsEditor" timestamp="1671962642050">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="451" y="132" width="1192" height="766" key="SettingsEditor/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671787532648" />
+    <state x="451" y="132" width="1192" height="766" key="SettingsEditor/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671962642050" />
     <state x="769" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1671701562423">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="769" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671701562423" />
-    <state x="477" y="228" key="new project wizard" timestamp="1671864216169">
+    <state x="477" y="228" key="new project wizard" timestamp="1671962566128">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="477" y="228" key="new project wizard/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671864216169" />
+    <state x="477" y="228" key="new project wizard/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671962566128" />
     <state x="616" y="250" width="672" height="677" key="run.anything.popup" timestamp="1671960834272">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -350,10 +342,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671698446677" />
-    <state x="640" y="222" key="spring file set editor" timestamp="1671788800669">
+    <state x="640" y="222" key="spring file set editor" timestamp="1671962809723">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="640" y="222" key="spring file set editor/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671788800669" />
+    <state x="640" y="222" key="spring file set editor/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671962809723" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
