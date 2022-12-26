@@ -14,6 +14,7 @@
         <module name="03mybaits-resultMap" />
         <module name="01mybatis_helloworld" />
         <module name="09spring_ioc_annotation" />
+        <module name="13spring_mvc_helloworld" />
         <module name="08spring_ioc_xml" />
         <module name="11spring-aop" />
         <module name="10spring_proxy" />
@@ -33,6 +34,7 @@
       <module name="10spring_proxy" target="1.8" />
       <module name="11spring-aop" target="1.8" />
       <module name="12spring-transaction" target="1.8" />
+      <module name="13spring_mvc_helloworld" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
