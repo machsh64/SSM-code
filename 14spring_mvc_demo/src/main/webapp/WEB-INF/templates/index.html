@@ -30,5 +30,39 @@
     <input type="submit" value="测试@RequestMapping注解的Method属性">
 </form>
 
+<!-- 此时只有该请求方式为 POST 且含有参数“ username ” 且不含有“ password ” 且“ age=20 ”的form表单可以匹配到该方法 -->
+<form method="post" th:action="@{/test/abc/20/admin}">
+    <input type="submit" value="测试@RequestMapping路径中的占位符">
+</form>
+<hr/>
+
+<form th:action="@{/param/servletAPI}" method="post" onsubmit="return check(username,password)">
+    用户名：<input type="text" name="username"><br/>
+    密码  ：<input type="password" name="password"><br/>
+    <input type="submit" value="登 录">
+</form>
+
+<form th:action="@{/param}" method="post">
+    用户名：<input type="text" name="username"><br/>
+    密码  ：<input type="password" name="password"><br/>
+    <input type="submit" value="登 录">
+</form>
+
+<form th:action="@{/param/pojo}" method="post">
+    Id值  ：<input type="number" name="id">
+    用户名：<input type="text" name="username"><br/>
+    密码  ：<input type="password" name="password"><br/>
+    <input type="submit" value="登 录">
+</form>
+
+<script type="text/javascript" src="../../js/index.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
