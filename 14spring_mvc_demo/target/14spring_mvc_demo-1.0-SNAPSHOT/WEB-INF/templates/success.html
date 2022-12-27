@@ -6,7 +6,12 @@
 </head>
 <body>
 <h1>Success.html  Welcome</h1>
+<hr/>
+<p th:text="${testRequestScope}"></p>
+<p th:text="${session.testRequestScope}"></p>
+<p th:text="${application.testRequestScope}"></p>
 
+<hr/>
 <a th:href="@{/protal/index}">返回首页</a>
 </body>
 </html>
