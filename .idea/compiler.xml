@@ -9,16 +9,17 @@
         <module name="03mybaits-resultMap" />
         <module name="04mybatis_dynamicSQL" />
         <module name="06mybatis_mbg" />
-        <module name="08spring_ioc_xml" />
+        <module name="07spring_helloworld" />
         <module name="12spring-transaction" />
+        <module name="08spring_ioc_xml" />
         <module name="11spring-aop" />
         <module name="01mybatis_helloworld" />
         <module name="02mybatis_parameter" />
+        <module name="15spring_mvc_rest" />
         <module name="09spring_ioc_annotation" />
         <module name="13spring_mvc_helloworld" />
         <module name="10spring_proxy" />
         <module name="14spring_mvc_demo" />
-        <module name="07spring_helloworld" />
         <module name="05mybatis_catch" />
       </profile>
     </annotationProcessing>
@@ -37,6 +38,8 @@
       <module name="12spring-transaction" target="1.8" />
       <module name="13spring_mvc_helloworld" target="1.8" />
       <module name="14spring_mvc_demo" target="1.8" />
+      <module name="15spring_mvc_rest" target="1.8" />
+      <module name="spring_mvc_rest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

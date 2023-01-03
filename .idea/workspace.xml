@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="14spring_mvc_demo:war exploded" />
+      <artifact name="15spring_mvc_rest:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="BranchesTreeState">
@@ -21,11 +21,33 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f11edad3-7511-4127-8545-baf724e51534" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/14spring_mvc_demo/src/main/java/com/ren/controller/TestViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14spring_mvc_demo/src/main/resources/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/14spring_mvc_demo/src/main/resources/springMVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14spring_mvc_demo/src/main/webapp/WEB-INF/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/14spring_mvc_demo/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14spring_mvc_demo/target/14spring_mvc_demo-1.0-SNAPSHOT/WEB-INF/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/14spring_mvc_demo/target/14spring_mvc_demo-1.0-SNAPSHOT/WEB-INF/templates/index.html" afterDir="false" />
+    <list default="true" id="f11edad3-7511-4127-8545-baf724e51534" name="Default Changelist" comment="test">
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/java/com/ren/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/java/com/ren/controller/TestRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/java/com/ren/dao/EmployeeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/java/com/ren/pojo/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/resources/SpringMVC.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/WEB-INF/templates/employee_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/WEB-INF/templates/employee_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/WEB-INF/templates/employee_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/WEB-INF/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/static/css/img/a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/static/css/img/body.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/static/css/img/body1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/static/css/img/sea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/static/css/img/zebratable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/static/css/img/表.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/static/css/index_like.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/static/css/index_work.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/static/js/axios.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/static/js/employee_list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/static/js/jquery-1.8.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp/static/js/vue.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +63,12 @@
         <option value="generatorConfig" />
         <option value="mybatis-config" />
         <option value="Aspect" />
-        <option value="jdbc" />
         <option value="Interface" />
-        <option value="HTML File" />
-        <option value="JavaScript File" />
+        <option value="jdbc" />
         <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -63,10 +85,14 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\Maven\maven-repository" />
         <option name="mavenHome" value="$PROJECT_DIR$/../../Maven/apache-maven-3.6.3" />
-        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.6.3\conf\settings.xml" />
+        <option name="userSettingsFile" value="C:\Users\machs\.m2\settings.xml" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenRunner">
@@ -89,31 +115,31 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.last.introduce.type" value="VAR" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/15spring_mvc_rest/src/main/webapp" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.19340974" />
     <property name="project.structure.side.proportion" value="0.289899" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\RenComp\SSM\15spring_mvc_rest\src\main\webapp" />
+      <recent name="D:\RenComp\SSM\14spring_mvc_demo\src\main\resources" />
+      <recent name="D:\RenComp\SSM\11spring-aop\src\main\java\com\ren\spring\aop\xml" />
+      <recent name="D:\RenComp\SSM\11spring-aop\src\main\java\com\ren\spring\aop\annotation" />
+      <recent name="D:\RenComp\SSM\06mybatis_mbg\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ren.mybatis.utils" />
+      <recent name="com.ren.mybatis.pojo" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\RenComp\SSM\14spring_mvc_demo\src\main\webapp" />
       <recent name="D:\RenComp\SSM\14spring_mvc_demo\src\main\webapp\WEB-INF\templates" />
       <recent name="D:\RenComp\SSM\14spring_mvc_demo\src\main\webapp\WEB-INF" />
       <recent name="D:\RenComp\SSM\05mybatis_catch\src\main\resources\com\ren\mybatis" />
       <recent name="D:\RenComp\SSM\05mybatis_catch\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ren.mybatis.utils" />
-      <recent name="com.ren.mybatis.pojo" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\RenComp\SSM\14spring_mvc_demo\src\main\resources" />
-      <recent name="D:\RenComp\SSM\11spring-aop\src\main\java\com\ren\spring\aop\xml" />
-      <recent name="D:\RenComp\SSM\11spring-aop\src\main\java\com\ren\spring\aop\annotation" />
-      <recent name="D:\RenComp\SSM\06mybatis_mbg\src\main\resources" />
-      <recent name="D:\RenComp\SSM\03mybaits-resultMap\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.SpringMVC">
@@ -198,15 +224,14 @@
       </method>
     </configuration>
     <configuration name="SpringMVC" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.82" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/14spring_mvc_demo/protal/index" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
-        <artifact name="14spring_mvc_demo:war exploded">
+        <artifact name="15spring_mvc_rest:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/14spring_mvc_demo" />
+            <option name="CONTEXT_PATH" value="/15spring_mvc" />
           </settings>
         </artifact>
       </deployment>
@@ -269,7 +294,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="14spring_mvc_demo:war exploded" />
+          <artifact name="15spring_mvc_rest:war exploded" />
         </option>
       </method>
     </configuration>
@@ -314,7 +339,7 @@
       <workItem from="1672058535242" duration="527000" />
       <workItem from="1672064655235" duration="653000" />
       <workItem from="1672129421306" duration="18827000" />
-      <workItem from="1672733414255" duration="2104000" />
+      <workItem from="1672733414255" duration="17738000" />
     </task>
     <servers />
   </component>
@@ -363,10 +388,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="797" y="380" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671011434811" />
-    <state x="373" y="197" width="1092" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1672130333095">
+    <state x="273" y="55" width="1092" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1672750415288">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="373" y="197" width="1092" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672130333095" />
+    <state x="273" y="55" width="1092" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672750415288" />
     <state x="716" y="343" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1671188569335">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -375,90 +400,90 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="709" y="377" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672138799959" />
-    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1672136388663">
+    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1672744690427">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672136388663" />
-    <state x="711" y="322" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1672051061124">
+    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672744690427" />
+    <state x="711" y="322" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1672738858705">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="711" y="322" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672051061124" />
+    <state x="711" y="322" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672738858705" />
     <state x="730" y="439" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1672045159333">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="730" y="439" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672045159333" />
-    <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1671355841595">
+    <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1672740776549">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671355841595" />
+    <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672740776549" />
     <state x="92" y="92" width="1736" height="896" key="DiffContextDialog" timestamp="1670675872252">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="DiffContextDialog/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1670675872252" />
-    <state x="676" y="268" key="FileChooserDialogImpl" timestamp="1672057474411">
+    <state x="495" y="95" key="FileChooserDialogImpl" timestamp="1672738797049">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="676" y="268" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672057474411" />
+    <state x="495" y="95" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672738797049" />
     <state x="2435" y="204" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1670825858278" />
-    <state width="1223" height="198" key="GridCell.Tab.0.bottom" timestamp="1672214313504">
-      <screen x="1920" y="0" width="1463" height="823" />
+    <state width="1624" height="301" key="GridCell.Tab.0.bottom" timestamp="1672753351132">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="274" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672144305533" />
+    <state width="1624" height="301" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672753351132" />
     <state width="1223" height="198" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1223" height="198" key="GridCell.Tab.0.center" timestamp="1672214313504">
-      <screen x="1920" y="0" width="1463" height="823" />
+    <state width="1624" height="301" key="GridCell.Tab.0.center" timestamp="1672753351132">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="274" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672144305533" />
+    <state width="1624" height="301" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672753351132" />
     <state width="1223" height="198" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1223" height="198" key="GridCell.Tab.0.left" timestamp="1672214313504">
-      <screen x="1920" y="0" width="1463" height="823" />
+    <state width="1624" height="301" key="GridCell.Tab.0.left" timestamp="1672753351132">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="274" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672144305533" />
+    <state width="1624" height="301" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672753351132" />
     <state width="1223" height="198" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1223" height="198" key="GridCell.Tab.0.right" timestamp="1672214313504">
-      <screen x="1920" y="0" width="1463" height="823" />
+    <state width="1624" height="301" key="GridCell.Tab.0.right" timestamp="1672753351132">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="274" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672144305533" />
+    <state width="1624" height="301" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672753351132" />
     <state width="1223" height="198" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1223" height="198" key="GridCell.Tab.1.bottom" timestamp="1672214313504">
-      <screen x="1920" y="0" width="1463" height="823" />
+    <state width="1624" height="301" key="GridCell.Tab.1.bottom" timestamp="1672753350652">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="274" key="GridCell.Tab.1.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672144305533" />
+    <state width="1624" height="301" key="GridCell.Tab.1.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672753350652" />
     <state width="1223" height="198" key="GridCell.Tab.1.bottom/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1223" height="198" key="GridCell.Tab.1.center" timestamp="1672214313504">
-      <screen x="1920" y="0" width="1463" height="823" />
+    <state width="1624" height="301" key="GridCell.Tab.1.center" timestamp="1672753350652">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="274" key="GridCell.Tab.1.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672144305533" />
+    <state width="1624" height="301" key="GridCell.Tab.1.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672753350652" />
     <state width="1223" height="198" key="GridCell.Tab.1.center/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1223" height="198" key="GridCell.Tab.1.left" timestamp="1672214313504">
-      <screen x="1920" y="0" width="1463" height="823" />
+    <state width="1624" height="301" key="GridCell.Tab.1.left" timestamp="1672753350652">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="274" key="GridCell.Tab.1.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672144305533" />
+    <state width="1624" height="301" key="GridCell.Tab.1.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672753350652" />
     <state width="1223" height="198" key="GridCell.Tab.1.left/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1223" height="198" key="GridCell.Tab.1.right" timestamp="1672214313504">
-      <screen x="1920" y="0" width="1463" height="823" />
+    <state width="1624" height="301" key="GridCell.Tab.1.right" timestamp="1672753350652">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="274" key="GridCell.Tab.1.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672144305533" />
+    <state width="1624" height="301" key="GridCell.Tab.1.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672753350652" />
     <state width="1223" height="198" key="GridCell.Tab.1.right/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1223" height="198" key="GridCell.Tab.2.bottom" timestamp="1672214313504">
-      <screen x="1920" y="0" width="1463" height="823" />
+    <state width="1624" height="301" key="GridCell.Tab.2.bottom" timestamp="1672753350652">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="274" key="GridCell.Tab.2.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672144305533" />
+    <state width="1624" height="301" key="GridCell.Tab.2.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672753350652" />
     <state width="1223" height="198" key="GridCell.Tab.2.bottom/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1223" height="198" key="GridCell.Tab.2.center" timestamp="1672214313504">
-      <screen x="1920" y="0" width="1463" height="823" />
+    <state width="1624" height="301" key="GridCell.Tab.2.center" timestamp="1672753350652">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="274" key="GridCell.Tab.2.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672144305533" />
+    <state width="1624" height="301" key="GridCell.Tab.2.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672753350652" />
     <state width="1223" height="198" key="GridCell.Tab.2.center/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1223" height="198" key="GridCell.Tab.2.left" timestamp="1672214313504">
-      <screen x="1920" y="0" width="1463" height="823" />
+    <state width="1624" height="301" key="GridCell.Tab.2.left" timestamp="1672753350652">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="274" key="GridCell.Tab.2.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672144305533" />
+    <state width="1624" height="301" key="GridCell.Tab.2.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672753350652" />
     <state width="1223" height="198" key="GridCell.Tab.2.left/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1223" height="198" key="GridCell.Tab.2.right" timestamp="1672214313504">
-      <screen x="1920" y="0" width="1463" height="823" />
+    <state width="1624" height="301" key="GridCell.Tab.2.right" timestamp="1672753350652">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="274" key="GridCell.Tab.2.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672144305533" />
+    <state width="1624" height="301" key="GridCell.Tab.2.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672753350652" />
     <state width="1223" height="198" key="GridCell.Tab.2.right/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
     <state width="1624" height="274" key="GridCell.Tab.3.bottom" timestamp="1672144248764">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -476,14 +501,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1624" height="274" key="GridCell.Tab.3.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672144248764" />
-    <state x="538" y="296" key="NewModule_or_Project.wizard" timestamp="1671008512405">
+    <state x="368" y="143" key="NewModule_or_Project.wizard" timestamp="1672738800417">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="538" y="296" key="NewModule_or_Project.wizard/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1671008512405" />
-    <state x="157" y="113" width="1192" height="745" key="SettingsEditor" timestamp="1672138548931">
+    <state x="368" y="143" key="NewModule_or_Project.wizard/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672738800417" />
+    <state x="302" y="72" width="1192" height="745" key="SettingsEditor" timestamp="1672738860741">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="157" y="113" width="1192" height="745" key="SettingsEditor/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672138548931" />
+    <state x="302" y="72" width="1192" height="745" key="SettingsEditor/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672738860741" />
     <state x="769" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1671701562423">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -492,10 +517,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="514" y="275" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672143741417" />
-    <state x="477" y="228" key="new project wizard" timestamp="1672050997089">
+    <state x="504" y="97" key="new project wizard" timestamp="1672738711861">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="477" y="228" key="new project wizard/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672050997089" />
+    <state x="504" y="97" key="new project wizard/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672738711861" />
     <state x="616" y="250" width="672" height="677" key="run.anything.popup" timestamp="1671969582984">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

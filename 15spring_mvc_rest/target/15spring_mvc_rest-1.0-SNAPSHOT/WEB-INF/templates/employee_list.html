@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee_List</title>
+
+    <link rel="stylesheet" th:href="@{/static/css/index_work.css}">
+</head>
+<body>
+<div id="app">
+    <table>
+        <tr>
+            <th colspan="5">employee list</th>
+        </tr>
+        <tr>
+            <th>id</th>
+            <th>lastName</th>
+            <th>email</th>
+            <th>gender</th>
+            <th>options<a th:href="@{/to/add}">add</a></th>
+        </tr>
+        <tr th:each="employee : ${allEmployee}">
+            <td th:text="${employee.id}">id</td>
+            <td th:text="${employee.lastName}">lastName</td>
+            <td th:text="${employee.email}">email</td>
+            <td th:text="${employee.gender}">gender</td>
+            <td>
+                <a th:href="@{'/employee/'+${employee.id}}" @click="deleteEmployee()">delete</a>
+                <a th:href="@{'/employee/'+${employee.id}}">update</a>
+            </td>
+        </tr>
+    </table>
+    <form method="post">
+        <input type="hidden" name="_method" value="delete">
+    </form>
+</div>
+<script type="text/javascript" th:src="@{/static/js/vue.js}"></script>
+<script type="text/javascript" th:src="@{/static/js/employee_list.js}"></script>
+</body>
+</html>
