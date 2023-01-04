@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/13spring_mvc_helloworld/13spring_mvc_helloworld.iml" filepath="$PROJECT_DIR$/13spring_mvc_helloworld/13spring_mvc_helloworld.iml" />
       <module fileurl="file://$PROJECT_DIR$/14spring_mvc_demo/14spring_mvc_demo.iml" filepath="$PROJECT_DIR$/14spring_mvc_demo/14spring_mvc_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/15spring_mvc_rest/15spring_mvc_rest.iml" filepath="$PROJECT_DIR$/15spring_mvc_rest/15spring_mvc_rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/16spring_mvc_ajax/16spring_mvc_ajax.iml" filepath="$PROJECT_DIR$/16spring_mvc_ajax/16spring_mvc_ajax.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SSM.iml" filepath="$PROJECT_DIR$/.idea/SSM.iml" />
     </modules>
   </component>

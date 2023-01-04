@@ -5,6 +5,7 @@
     <file type="web" url="file://$PROJECT_DIR$/13spring_mvc_helloworld" />
     <file type="web" url="file://$PROJECT_DIR$/14spring_mvc_demo" />
     <file type="web" url="file://$PROJECT_DIR$/15spring_mvc_rest" />
+    <file type="web" url="file://$PROJECT_DIR$/16spring_mvc_ajax" />
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
@@ -30,6 +31,7 @@
         <option value="$PROJECT_DIR$/13spring_mvc_helloworld/pom.xml" />
         <option value="$PROJECT_DIR$/14spring_mvc_demo/pom.xml" />
         <option value="$PROJECT_DIR$/15spring_mvc_rest/pom.xml" />
+        <option value="$PROJECT_DIR$/16spring_mvc_ajax/pom.xml" />
       </list>
     </option>
   </component>
