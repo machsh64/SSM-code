@@ -22,17 +22,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f11edad3-7511-4127-8545-baf724e51534" name="Default Changelist" comment="test">
-      <change afterPath="$PROJECT_DIR$/16spring_mvc_ajax/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16spring_mvc_ajax/src/main/java/com/ren/controller/TestAjaxController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16spring_mvc_ajax/src/main/java/com/ren/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16spring_mvc_ajax/src/main/resources/SpringMVC.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16spring_mvc_ajax/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16spring_mvc_ajax/src/main/webapp/WEB-INF/templates/success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16spring_mvc_ajax/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16spring_mvc_ajax/src/main/webapp/js/axios.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16spring_mvc_ajax/src/main/webapp/js/employee_list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16spring_mvc_ajax/src/main/webapp/js/jquery-1.8.2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16spring_mvc_ajax/src/main/webapp/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16spring_mvc_ajax/src/main/java/com/ren/controller/FileUpAndDownController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16spring_mvc_ajax/src/main/webapp/img/01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16spring_mvc_ajax/16spring_mvc_ajax.iml" beforeDir="false" afterPath="$PROJECT_DIR$/16spring_mvc_ajax/16spring_mvc_ajax.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16spring_mvc_ajax/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/16spring_mvc_ajax/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16spring_mvc_ajax/src/main/resources/SpringMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/16spring_mvc_ajax/src/main/resources/SpringMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16spring_mvc_ajax/src/main/webapp/WEB-INF/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/16spring_mvc_ajax/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16spring_mvc_ajax/target/16spring_mvc_ajax-1.0-SNAPSHOT/WEB-INF/classes/SpringMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/16spring_mvc_ajax/target/16spring_mvc_ajax-1.0-SNAPSHOT/WEB-INF/classes/SpringMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16spring_mvc_ajax/target/16spring_mvc_ajax-1.0-SNAPSHOT/WEB-INF/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/16spring_mvc_ajax/target/16spring_mvc_ajax-1.0-SNAPSHOT/WEB-INF/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16spring_mvc_ajax/target/classes/SpringMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/16spring_mvc_ajax/target/classes/SpringMVC.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +98,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.last.introduce.type" value="VAR" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/16spring_mvc_ajax/src/main/webapp/WEB-INF/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/16spring_mvc_ajax/src/main/webapp/img" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.19340974" />
@@ -109,11 +107,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\RenComp\SSM\16spring_mvc_ajax\src\main\webapp\img" />
       <recent name="D:\RenComp\SSM\16spring_mvc_ajax\src\main\webapp\WEB-INF\templates" />
       <recent name="D:\RenComp\SSM\16spring_mvc_ajax\src\main\webapp" />
       <recent name="D:\RenComp\SSM\15spring_mvc_rest\src\main\webapp" />
       <recent name="D:\RenComp\SSM\14spring_mvc_demo\src\main\resources" />
-      <recent name="D:\RenComp\SSM\11spring-aop\src\main\java\com\ren\spring\aop\xml" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ren.mybatis.utils" />
@@ -324,7 +322,7 @@
       <workItem from="1672058535242" duration="527000" />
       <workItem from="1672064655235" duration="653000" />
       <workItem from="1672129421306" duration="18827000" />
-      <workItem from="1672733414255" duration="26735000" />
+      <workItem from="1672733414255" duration="31644000" />
     </task>
     <servers />
   </component>
@@ -410,65 +408,65 @@
     </state>
     <state x="495" y="95" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672822561859" />
     <state x="2435" y="204" key="FileChooserDialogImpl/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1670825858278" />
-    <state width="1624" height="305" key="GridCell.Tab.0.bottom" timestamp="1672828348509">
+    <state width="1624" height="265" key="GridCell.Tab.0.bottom" timestamp="1672834337485">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="305" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672828348509" />
+    <state width="1624" height="265" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672834337485" />
     <state width="1223" height="198" key="GridCell.Tab.0.bottom/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1624" height="305" key="GridCell.Tab.0.center" timestamp="1672828348509">
+    <state width="1624" height="265" key="GridCell.Tab.0.center" timestamp="1672834337484">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="305" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672828348509" />
+    <state width="1624" height="265" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672834337484" />
     <state width="1223" height="198" key="GridCell.Tab.0.center/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1624" height="305" key="GridCell.Tab.0.left" timestamp="1672828348509">
+    <state width="1624" height="265" key="GridCell.Tab.0.left" timestamp="1672834337484">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="305" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672828348509" />
+    <state width="1624" height="265" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672834337484" />
     <state width="1223" height="198" key="GridCell.Tab.0.left/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1624" height="305" key="GridCell.Tab.0.right" timestamp="1672828348509">
+    <state width="1624" height="265" key="GridCell.Tab.0.right" timestamp="1672834337485">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="305" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672828348509" />
+    <state width="1624" height="265" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672834337485" />
     <state width="1223" height="198" key="GridCell.Tab.0.right/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1624" height="305" key="GridCell.Tab.1.bottom" timestamp="1672828348401">
+    <state width="1624" height="265" key="GridCell.Tab.1.bottom" timestamp="1672834337391">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="305" key="GridCell.Tab.1.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672828348401" />
+    <state width="1624" height="265" key="GridCell.Tab.1.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672834337391" />
     <state width="1223" height="198" key="GridCell.Tab.1.bottom/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1624" height="305" key="GridCell.Tab.1.center" timestamp="1672828348401">
+    <state width="1624" height="265" key="GridCell.Tab.1.center" timestamp="1672834337391">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="305" key="GridCell.Tab.1.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672828348401" />
+    <state width="1624" height="265" key="GridCell.Tab.1.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672834337391" />
     <state width="1223" height="198" key="GridCell.Tab.1.center/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1624" height="305" key="GridCell.Tab.1.left" timestamp="1672828348401">
+    <state width="1624" height="265" key="GridCell.Tab.1.left" timestamp="1672834337391">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="305" key="GridCell.Tab.1.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672828348401" />
+    <state width="1624" height="265" key="GridCell.Tab.1.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672834337391" />
     <state width="1223" height="198" key="GridCell.Tab.1.left/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1624" height="305" key="GridCell.Tab.1.right" timestamp="1672828348401">
+    <state width="1624" height="265" key="GridCell.Tab.1.right" timestamp="1672834337391">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="305" key="GridCell.Tab.1.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672828348401" />
+    <state width="1624" height="265" key="GridCell.Tab.1.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672834337391" />
     <state width="1223" height="198" key="GridCell.Tab.1.right/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1624" height="305" key="GridCell.Tab.2.bottom" timestamp="1672828348401">
+    <state width="1624" height="265" key="GridCell.Tab.2.bottom" timestamp="1672834337391">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="305" key="GridCell.Tab.2.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672828348401" />
+    <state width="1624" height="265" key="GridCell.Tab.2.bottom/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672834337391" />
     <state width="1223" height="198" key="GridCell.Tab.2.bottom/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1624" height="305" key="GridCell.Tab.2.center" timestamp="1672828348401">
+    <state width="1624" height="265" key="GridCell.Tab.2.center" timestamp="1672834337391">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="305" key="GridCell.Tab.2.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672828348401" />
+    <state width="1624" height="265" key="GridCell.Tab.2.center/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672834337391" />
     <state width="1223" height="198" key="GridCell.Tab.2.center/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1624" height="305" key="GridCell.Tab.2.left" timestamp="1672828348401">
+    <state width="1624" height="265" key="GridCell.Tab.2.left" timestamp="1672834337391">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="305" key="GridCell.Tab.2.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672828348401" />
+    <state width="1624" height="265" key="GridCell.Tab.2.left/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672834337391" />
     <state width="1223" height="198" key="GridCell.Tab.2.left/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
-    <state width="1624" height="305" key="GridCell.Tab.2.right" timestamp="1672828348401">
+    <state width="1624" height="265" key="GridCell.Tab.2.right" timestamp="1672834337391">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1624" height="305" key="GridCell.Tab.2.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672828348401" />
+    <state width="1624" height="265" key="GridCell.Tab.2.right/1920.0.1463.823/0.0.1920.1080@0.0.1920.1080" timestamp="1672834337391" />
     <state width="1223" height="198" key="GridCell.Tab.2.right/1920.0.1463.823/0.0.1920.1080@1920.0.1463.823" timestamp="1672214313504" />
     <state width="1624" height="274" key="GridCell.Tab.3.bottom" timestamp="1672144248764">
       <screen x="0" y="0" width="1920" height="1080" />
