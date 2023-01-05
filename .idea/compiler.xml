@@ -16,6 +16,7 @@
         <module name="17spring_mvc_extension" />
         <module name="01mybatis_helloworld" />
         <module name="02mybatis_parameter" />
+        <module name="18spring_mvc_annotation" />
         <module name="04mybatis_dynamicSQL" />
         <module name="09spring_ioc_annotation" />
         <module name="13spring_mvc_helloworld" />
@@ -43,6 +44,7 @@
       <module name="15spring_mvc_rest" target="1.8" />
       <module name="16spring_mvc_ajax" target="1.8" />
       <module name="17spring_mvc_extension" target="1.8" />
+      <module name="18spring_mvc_annotation" target="1.8" />
       <module name="spring_mvc_rest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
