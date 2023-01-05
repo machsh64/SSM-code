@@ -45,6 +45,19 @@
         <ref bean="secondInterceptor"/>
     </mvc:interceptors>
 
+    <!-- 使用xml配置异常处理 -->
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="exceptionMappings">
+            <props>
+                <!-- key设置要预处理的方法出现的异常，value设置出现该异常时要跳转的页面所对应的逻辑视图 -->
+                <prop key="java.lang.Exception">error</prop>
+            </props>
+        </property>
+
+        <!-- exceptionAttribute属性名，value设置共享在请求域中的异常信息的属性名 -->
+        <property name="exceptionAttribute" value="ex"/>
+    </bean>
+
     <!-- 配置默认的servlet处理静态资源 -->
     <mvc:default-servlet-handler/>
 
