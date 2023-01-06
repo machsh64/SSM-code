@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="19spirng_listenter" />
         <module name="03mybaits-resultMap" />
         <module name="11spring-aop" />
         <module name="06mybatis_mbg" />
@@ -45,6 +46,7 @@
       <module name="16spring_mvc_ajax" target="1.8" />
       <module name="17spring_mvc_extension" target="1.8" />
       <module name="18spring_mvc_annotation" target="1.8" />
+      <module name="19spirng_listenter" target="1.8" />
       <module name="spring_mvc_rest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
