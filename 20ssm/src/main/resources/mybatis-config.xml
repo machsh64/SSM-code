@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <!--
+    书写顺序
+    properties?,settings?,typeAliases?,typeHandlers?,objectFactory?,
+    objectWrapperFactory?,reflectorFactory?,plugins?,environments?,
+    databaseIdProvider?,mappers?
+    -->
+
+    <!-- 设置全局配置 -->
+    <settings>
+        <!-- 将下划线映射为驼峰 -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!-- 开启延迟加载，若为true，在在分步查询中只会执行到所需要的sql为止 -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!-- 按需加载，常态下为false，若设置为true，则在任何分步查询中会加载所有sql -->
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+
+    <plugins>
+        <!-- 配置分页插件 -->
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"/>
+    </plugins>
+
+    <!-- Druid数据源同样在spring配置文件中进行了配置 -->
+
+    <!-- 设置默认类型别名(在pojoMapper中查询时resultType中填入声明数据类型) 在spring配置文件中已经进行了设置 -->
+   <!-- <typeAliases>
+        <package name="com.ren.ssm.pojo"/>
+    </typeAliases>-->
+
+    <!-- 引入mybatis的映射文件 在spring配置文件中已经进行了配置 -->
+    <!--<mappers>
+        &lt;!&ndash;
+          以包的方式引入映射文件，但是必须满足两个条件：
+          1，mapper接口和映射文件所在的包必须一致
+          2，mapper接口的名字和映射文件的名字必须一致
+        &ndash;&gt;
+        <package name="com.ren.ssm.mapper"/>
+    </mappers>-->
+</configuration>
+

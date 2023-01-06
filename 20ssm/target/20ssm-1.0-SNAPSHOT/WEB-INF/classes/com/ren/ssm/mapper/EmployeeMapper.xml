@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace对应mapper接口的全类型 -->
+<mapper namespace="com.ren.ssm.mapper.EmployeeMapper">
+    <!-- sql语句填写区 例：<select id="mapper接口中的方法" resultType="数据类型全类名/别名">sql语句</select>-->
+
+    <resultMap id="empResultMap" type="Employee">
+        <id column="emp_id" property="empId"/>
+        <result column="emp_name" property="empName"/>
+        <result column="age" property="age"/>
+        <result column="gender" property="gender"/>
+        <result column="email" property="email"/>
+    </resultMap>
+
+    <!-- List<Employee> getAllEmp(); -->
+    <select id="getAllEmp" resultMap="empResultMap">
+        SELECT emp_id, emp_name, age, gender, email
+        FROM t_emp
+    </select>
+
+    <!-- Employee getEmpById(@Param("empId") Integer empId); -->
+    <select id="getEmpById" resultType="Employee">
+        SELECT emp_id, emp_name, age, gender, email
+        FROM t_emp
+        WHERE emp_id = #{empId}
+    </select>
+
+    <!-- Integer addEmp(Employee employee); -->
+    <insert id="addEmp">
+        INSERT INTO t_emp(emp_name, age, gender, email)
+        VALUES (#{empName}, #{age}, #{gender}, #{email})
+    </insert>
+
+    <!-- Integer updateEmp(Employee employee); -->
+    <update id="updateEmp">
+        UPDATE t_emp
+        SET emp_name=#{empName},
+            age=#{age},
+            gender=#{gender},
+            email=#{email}
+        WHERE emp_id = #{empId}
+    </update>
+
+    <!-- Integer deleteEmp(@Param("empId") Integer empId); -->
+    <delete id="deleteEmp">
+        DELETE
+        FROM t_emp
+        WHERE emp_id = #{empId}
+    </delete>
+</mapper>

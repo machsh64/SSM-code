@@ -7,24 +7,25 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="19spirng_listenter" />
-        <module name="03mybaits-resultMap" />
+        <module name="01mybatis_helloworld" />
         <module name="11spring-aop" />
+        <module name="20ssm" />
         <module name="06mybatis_mbg" />
         <module name="16spring_mvc_ajax" />
         <module name="08spring_ioc_xml" />
         <module name="12spring-transaction" />
         <module name="15spring_mvc_rest" />
-        <module name="17spring_mvc_extension" />
-        <module name="01mybatis_helloworld" />
-        <module name="02mybatis_parameter" />
         <module name="18spring_mvc_annotation" />
+        <module name="05mybatis_catch" />
+        <module name="02mybatis_parameter" />
         <module name="04mybatis_dynamicSQL" />
+        <module name="03mybaits-resultMap" />
         <module name="09spring_ioc_annotation" />
         <module name="13spring_mvc_helloworld" />
         <module name="10spring_proxy" />
         <module name="14spring_mvc_demo" />
         <module name="07spring_helloworld" />
-        <module name="05mybatis_catch" />
+        <module name="17spring_mvc_extension" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -47,7 +48,9 @@
       <module name="17spring_mvc_extension" target="1.8" />
       <module name="18spring_mvc_annotation" target="1.8" />
       <module name="19spirng_listenter" target="1.8" />
+      <module name="20ssm" target="1.8" />
       <module name="spring_mvc_rest" target="1.8" />
+      <module name="ssm" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

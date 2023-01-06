@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>EmployeeAdd</title>
+    <link rel="stylesheet" th:href="@{/static/css/index_work.css}">
+</head>
+<body>
+<form th:action="@{/employee}" method="post">
+    <table>
+        <tr>
+            <th colspan="2">add employee</th>
+        </tr>
+        <tr>
+            <td>姓名</td>
+            <td>
+                <input name="empName" type="text" placeholder="输入姓名">
+            </td>
+        </tr>
+        <tr>
+            <td>年龄</td>
+            <td>
+                <input name="age" type="number" placeholder="输入年龄">
+            </td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>
+                <input name="email" type="text" placeholder="输入email">
+            </td>
+        </tr>
+        <tr>
+            <td>gender</td>
+            <td>
+                <input name="gender" type="radio" value="男">male
+                <input name="gender" type="radio" value="女">female
+            </td>
+        </tr>
+        <tr>
+            <td>gender</td>
+            <td colspan="2">
+            <input type="submit" value="提交">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
