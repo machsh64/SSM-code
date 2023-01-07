@@ -1,5 +1,6 @@
 package com.ren.ssm.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.ren.ssm.pojo.Employee;
 import com.ren.ssm.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,7 @@ public class EmployeeController {
     @Autowired
     EmployeeService employeeService;
 
+    //查询所有的员工信息 --> /employee --> get  已弃用
     @RequestMapping(value = "/employee",method = RequestMethod.GET)
     public String toEmpList(Model model){
         // 查询所有员工信息
@@ -37,22 +39,30 @@ public class EmployeeController {
         return "emp_list";
     }
 
-//    @RequestMapping("/employee/page/{page}")
-//    public String getEmpPage(Model model,@PathVariable("page") Integer page){
-//        // 获取员工的分页信息
-//    }
+    //查询员工的分页信息 --> /employee/page/1 --get
+    @RequestMapping("/employee/page/{pageNum}")
+    public String getEmpPage(Model model,@PathVariable("pageNum") Integer pageNum){
+        // 获取员工的分页信息
+        PageInfo<Employee> page = employeeService.getEmployeePage(pageNum);
+        // 将分页数据共享到请求域中
+        model.addAttribute("page",page);
+        return "emp_list";
+    }
 
+    //跳转到添加页面 --> /to/add --> get
     @RequestMapping(value = "/to/add",method = RequestMethod.GET)
     public String toAddPage(){
       return "employee_add";
     }
 
+    //添加员工信息 --> /employee --> post
     @PostMapping("/employee")
     public String addEmp(Employee employee){
         employeeService.addEmp(employee);
-        return "redirect:/employee";
+        return "redirect:/employee/page/1";
     }
 
+    //跳转到修改页面 --> /employee/1 --> get
     @RequestMapping(value = "/employee/{empId}",method = RequestMethod.GET)
     public String toUpdatePage(Model model,@PathVariable("empId") Integer empId){
         Employee employee = employeeService.getEmpById(empId);
@@ -60,16 +70,18 @@ public class EmployeeController {
         return "employee_update";
     }
 
+    //修改员工信息 --> /employee --> puttMapping("/employee")
     @PutMapping("/employee")
     public String updateEmp(Employee employee){
         employeeService.updateEmp(employee);
-        return "redirect:/employee";
+        return "redirect:/employee/page/1";
     }
 
+    //删除员工信息 --> /employee/1 --> delete
     @DeleteMapping("/employee/{empId}")
     public String deleteEmp(@PathVariable("empId") Integer empId){
         employeeService.deleteEmp(empId);
-        return "redirect:/employee";
+        return "redirect:/employee/page/1";
     }
 
 }

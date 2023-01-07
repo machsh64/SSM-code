@@ -1,5 +1,6 @@
 package com.ren.ssm.service;
 
+import com.github.pagehelper.PageInfo;
 import com.ren.ssm.pojo.Employee;
 
 import java.util.List;
@@ -22,12 +23,21 @@ public interface EmployeeService {
     List<Employee> getAllEmp();
 
     /**
-    * @Description: 根据id查找员工
+    * @Description: 查询员工的分页信息
     * @Param:
     * @Author: Ren
     * @return:
-    * @Date: 2023/1/6 20:26
+    * @Date: 2023/1/7 18:10
     */
+    PageInfo<Employee> getEmployeePage(Integer pageNum);
+
+        /**
+        * @Description: 根据id查找员工
+        * @Param:
+        * @Author: Ren
+        * @return:
+        * @Date: 2023/1/6 20:26
+        */
     Employee getEmpById(Integer empId);
 
     /**

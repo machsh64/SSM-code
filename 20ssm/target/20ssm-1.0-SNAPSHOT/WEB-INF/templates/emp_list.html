@@ -17,9 +17,12 @@
             <th>年龄</th>
             <th>性别</th>
             <th>邮箱</th>
-            <th>操作</th>
+            <th>
+                操作
+                <a th:href="@{/to/add}">添加</a>
+            </th>
         </tr>
-        <tr th:each="employee,status : ${empList}">
+        <tr th:each="employee,status : ${page.list}">
             <td th:text="${status.count}"></td>
             <td th:text="${employee.empName}"></td>
             <td th:text="${employee.age}"></td>
@@ -31,6 +34,18 @@
             </td>
         </tr>
     </table>
+    <div style="text-align: center">
+        <a th:if="${page.hasPreviousPage}" th:href="@{/employee/page/1}">首页</a>
+        <a th:if="${page.hasPreviousPage}" th:href="@{'/employee/page/'+${page.prePage}}">上一页</a>
+        <span th:each="num : ${page.navigatepageNums}">
+          &nbsp;
+            <a th:if="${page.pageNum == num}" style="color: red" th:text="|[${num}]|" th:href="@{'/employee/page/'+${num}}"></a>
+            <a th:if="${page.pageNum != num}" th:text="${num}" th:href="@{'/employee/page/'+${num}}"></a>
+            &nbsp;
+        </span>
+        <a th:if="${page.hasNextPage}" th:href="@{'/employee/page/'+${page.nextPage}}">下一页</a>
+        <a th:if="${page.hasNextPage}" th:href="@{'/employee/page/'+${page.pages}}">末页</a>
+    </div>
 </div>
 <form method="post">
     <input type="hidden" name="_method" value="delete">
@@ -40,15 +55,20 @@
 <script type="text/javascript">
     var app = document.getElementById("app");
     var vue = new Vue({
-        el : '#app',
-        methods:{
+        el: '#app',
+        methods: {
             deleteEmployee() {
                 //获取form表单
                 var form = document.getElementsByTagName("form")[0];
-                //将超链接的href属性赋值给form表单的action属性
-                form.action = event.target.href;
-                //提交表单
-                form.submit();
+                if (confirm("确认删除吗？")) {
+                    //将超链接的href属性赋值给form表单的action属性
+                    form.action = event.target.href;
+                    //提交表单
+                    form.submit();
+                } else {
+                    //阻止标签进行跳转
+                    event.stopPropagation();
+                }
                 //阻止当前超链接默认行为
                 event.preventDefault();
             }
